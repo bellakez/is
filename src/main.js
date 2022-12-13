@@ -24,3 +24,4 @@ function toggleMenu() {
     document.querySelector("menuknap_mobil").textContent = "X";
   }
 }
+
