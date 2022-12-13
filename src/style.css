@@ -68,7 +68,7 @@ _________________________________DESIGN SYSTEM_____________________________
   /* Font scale heading */
   --display-mobil: 2rem;
   --underoverskrift-1-mobil: 1.25rem;
-  --underoverskrift-2-mobil: 1.875rem;
+  --underoverskrift-2-mobil: 1.1rem;
 
   /* Font scale body text */
   --leading-mobil: 1rem;
@@ -81,6 +81,7 @@ _________________________________DESIGN SYSTEM_____________________________
 
 body {
   line-height: 150%;
+  background-color: var(--creme-100);
 }
 
 /* ---------------------------MOBIL!!!--------------- */
@@ -151,7 +152,7 @@ body {
     color: var(--pink-700);
     text-decoration: underline;
   }
-    .linksblack {
+  .linksblack {
     font-family: "Inter", sans-serif;
     font-size: var(--lille-p-mobil);
     font-weight: 400;
@@ -177,6 +178,40 @@ body {
     position: relative;
     background-size: 100%;
     background-repeat: no-repeat;
+  }
+
+  /*----------- BURGER MENU  --------  */
+
+  .hidden {
+    display: none;
+  }
+
+  .hidden_menu {
+    display: block;
+  }
+
+  #menuknap_mobil {
+    display: flex;
+    justify-content: right;
+  }
+
+  #menu {
+    background-color: var(--creme-200);
+    height: 812px;
+  }
+
+  /*----------- Spacing på main  --------  */
+  .main_spacing {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .element_spacing {
+    margin-top: var(--spacing-xl);
+  }
+
+  .lille_spacing {
+    padding-top: var(--spacing-s);
   }
 }
 
@@ -249,7 +284,7 @@ body {
     color: var(--pink-700);
     text-decoration: underline;
   }
-    .linksblack {
+  .linksblack {
     font-family: "Inter", sans-serif;
     font-size: var(--lille-p-web);
     font-weight: 400;
@@ -275,9 +310,36 @@ body {
     background-size: 100%;
     background-repeat: no-repeat;
   }
+
+  /*----------- BURGER MENU  --------  */
+  .hidden {
+    display: none;
+  }
+
+  #menuknap_mobil {
+    display: none;
+  }
+
+  #menu {
+    display: block;
+  }
 }
 
 article {
   max-width: 65ch;
   margin: 5rem auto;
+}
+
+/*----------- Spacing af main  --------  */
+.main_spacing {
+  margin-left: 236px;
+  margin-right: 236px;
+}
+
+.element_spacing {
+  margin-top: var(--spacing-xxl);
+}
+
+.lille_spacing {
+  padding-top: var(--spacing-m);
 }
