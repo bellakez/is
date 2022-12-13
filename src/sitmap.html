@@ -10,31 +10,33 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Lobster&display=swap"
       rel="stylesheet"
     />
-
+    <link rel="stylesheet" href="style.css" />
     <title>Sitemap</title>
   </head>
-  <body class="bg-[#FFFDF9]">
+  <body>
     <header>
       <nav
         class="flex h-44 w-screen justify-between bg-[url('../menu/bg_hovedmenu.svg')]"
       >
-        <div id="menuknap_mobil">☰</div>
-        <ul id="menu" class="hidden">
-          <div class="flex justify-start pt-20">
-            <a href="index.html"
-              ><img class="logo" src="" alt="logo til forside"
-            /></a>
-          </div>
-          <div class="flex justify-end gap-10 pt-20">
-            <a href="">Vores is ⇓</a>
-            <a href="omismageriet.html">Om Ismageriet</a>
-            <a href="indhold.html">Indhold i is</a>
-            <a href="kontakt.html">Kontakt</a>
-            <a href="kurv-tom.html"
-              ><img src="../menu/kurv_menu.svg" alt="kurven"
-            /></a>
-          </div>
-        </ul>
+        <div class="z-50 w-screen">
+          <div id="menuknap_mobil">☰</div>
+          <ul id="menu" class="hidden">
+            <div class="flex justify-start pt-20">
+              <a href="index.html"><img class="logo" src="" alt="" /></a>
+            </div>
+            <div
+              class="grid place-content-center gap-10 pt-20 lg:flex lg:justify-end"
+            >
+              <a href="">Vores is ⇓</a>
+              <a href="omismageriet.html">Om Ismageriet</a>
+              <a href="indhold.html">Indhold i is</a>
+              <a href="kontakt.html">Kontakt</a>
+              <a href="kurv-tom.html"
+                ><img src="../menu/kurv_menu.svg" alt="kurven"
+              /></a>
+            </div>
+          </ul>
+        </div>
       </nav>
     </header>
     <main class="grid place-content-center">
@@ -43,65 +45,65 @@
       </div>
       <div>
         <a href="index.html"
-          ><ol>
+          ><ol class="lille_spacing">
             Forside
           </ol></a
         >
         <a href="omismageriet.html"
-          ><ol>
+          ><ol class="lille_spacing">
             Om Ismageriet
           </ol></a
         >
-        <ol>
+        <ol class="lille_spacing">
           Vores is
         </ol>
         <a href="bestilis.html">
-          <ol class="pl-2">
+          <ol class="lille_spacing pl-2">
             • Bestil is
           </ol></a
         >
         <a href="sortiment.html">
-          <ol class="pl-2">
+          <ol class="lille_spacing pl-2">
             • Sortiment
           </ol></a
         >
         <a href="indhold.html">
-          <ol class="pl-2">
+          <ol class="lille_spacing pl-2">
             • Indhold i is
           </ol>
         </a>
         <a href="gavekort.html">
-          <ol class="pl-2">
+          <ol class="lille_spacing pl-2">
             • Gavekort
           </ol>
         </a>
         <a href="kontakt.html">
-          <ol>
+          <ol class="lille_spacing">
             Kontakt
           </ol>
         </a>
         <a href="">
-          <ol>
+          <ol class="lille_spacing">
             Job
           </ol>
         </a>
         <a href="faq.html">
-          <ol>
+          <ol class="lille_spacing">
             FAQ
           </ol>
         </a>
         <a href="">
-          <ol>
+          <ol class="lille_spacing">
             Kontrolrapport
           </ol>
         </a>
         <a href="">
-          <ol>
+          <ol class="lille_spacing">
             Cookie politik
           </ol>
         </a>
         <a href="">
-          <ol>
+          <ol class="lille_spacing">
             Forretningspolitik
           </ol>
         </a>
