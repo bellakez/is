@@ -33,7 +33,7 @@ _________________________________DESIGN SYSTEM_____________________________
   --pink-700: #f291ba;
   --taupe-800: #363636;
 
-/* _____________SPACING________________*/
+  /* _____________SPACING________________*/
 
   --spacing-xs: 0.625rem; /*(10px)*/
   --spacing-s: 0.9375rem; /*(15px)*/
@@ -43,7 +43,6 @@ _________________________________DESIGN SYSTEM_____________________________
   --spacing-xxl: 5rem; /*(80px)*/
   --spacing-afsnit: 3.125rem; /*(50px)*/
   --spacing-heading: 2.125rem; /*(34px)*/
-
 
   /* _______________________WEB_____________________________
 -------------------------------------------------------------- */
@@ -61,7 +60,6 @@ _________________________________DESIGN SYSTEM_____________________________
   --lille-p-web: 0.875;
   --italic-p-web: 0.875;
 
-
   /* ________________________MOBIL__________________________
 ------------------------------------------------------------- */
 
@@ -78,7 +76,6 @@ _________________________________DESIGN SYSTEM_____________________________
   --lille-p-mobil: 0.75;
   --italic-p-mobil: 0.75;
 
-
   /* Aliases */
 }
 
@@ -94,7 +91,9 @@ body {
     font-family: "Lobster", cursive;
     font-size: var(--display-mobil);
     font-weight: 400;
-    margin-top: var(--spacing-40);
+    color: var(--taupe-800);
+    margin-top: var(--spacing-l);
+    margin-bottom: var(--spacing-m);
   }
 
   h2,
@@ -102,7 +101,8 @@ body {
     font-family: "Inter", sans-serif;
     font-size: var(--underoverskrift-1-mobil);
     font-weight: 400;
-    margin-top: var(--spacing-40);
+    color: var(--taupe-800);
+    margin-top: var(--spacing-m);
   }
 
   h3,
@@ -110,35 +110,73 @@ body {
     font-family: "Inter", sans-serif;
     font-size: var(--underoverskrift-2-mobil);
     font-weight: 400;
-    margin-top: var(--spacing-20);
+    color: var(--taupe-800);
+    margin-top: var(--spacing-m);
   }
 
   .text-lead {
     font-family: "Inter", sans-serif;
     font-size: var(--leading-mobil);
     font-weight: 600;
-    margin-top: var(--spacing-20);
+    color: var(--taupe-800);
+    margin-top: var(--spacing-m);
   }
 
-  .text-p {
+  p {
     font-family: "Inter", sans-serif;
     font-size: var(--p-mobil);
     font-weight: 400;
-    margin-top: var(--spacing-20);
   }
 
   .text-small {
     font-family: "Inter", sans-serif;
     font-size: var(--lille-p-mobil);
     font-weight: 400;
-    margin-top: var(--spacing-20);
+    color: var(--taupe-800);
+    margin-top: var(--spacing-m);
   }
   .text-italic {
     font-family: "Inter", sans-serif;
     font-size: var(--italic-p-mobil);
     font-style: italic;
     font-weight: 400;
-    margin-top: var(--spacing-20);
+    color: var(--taupe-800);
+    margin-top: var(--spacing-m);
+  }
+
+  .links {
+    font-family: "Inter", sans-serif;
+    font-size: var(--p-mobil);
+    font-weight: 400;
+    color: var(--pink-700);
+    text-decoration: underline;
+  }
+    .linksblack {
+    font-family: "Inter", sans-serif;
+    font-size: var(--lille-p-mobil);
+    font-weight: 400;
+    color: var(--taupe-800);
+    text-decoration: underline;
+  }
+
+  /*----------- FOOTER  --------  */
+
+  .footerbaggrund {
+    background-image: url(statiske-elementer/footer-mobil.svg);
+    aspect-ratio: 1615/3492;
+    position: relative;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  /*----------- MENU  --------  */
+
+  .logo {
+    background-image: url(statiske-elementer/logo-mobil.svg);
+    aspect-ratio: 130/260;
+    position: relative;
+    background-size: 100%;
+    background-repeat: no-repeat;
   }
 }
 
@@ -150,7 +188,8 @@ body {
     font-family: "Lobster", cursive;
     font-size: var(--display-web);
     font-weight: 400;
-    margin-top: var(--spacing-40);
+    color: var(--taupe-800);
+    margin-top: var(--spacing-xxl);
   }
 
   h2,
@@ -158,7 +197,8 @@ body {
     font-family: "Inter", sans-serif;
     font-size: var(--underoverskrift-1-web);
     font-weight: 400;
-    margin-top: var(--spacing-40);
+    color: var(--taupe-800);
+    margin-top: var(--spacing-xl);
   }
 
   h3,
@@ -166,6 +206,7 @@ body {
     font-family: "Inter", sans-serif;
     font-size: var(--underoverskrift-2-web);
     font-weight: 400;
+    color: var(--taupe-800);
     margin-top: var(--spacing-20);
   }
 
@@ -173,13 +214,15 @@ body {
     font-family: "Inter", sans-serif;
     font-size: var(--leading-web);
     font-weight: 600;
+    color: var(--taupe-800);
     margin-top: var(--spacing-20);
   }
 
-  .text-p {
+  p {
     font-family: "Inter", sans-serif;
     font-size: var(--p-web);
     font-weight: 400;
+    color: var(--taupe-800);
     margin-top: var(--spacing-20);
   }
 
@@ -187,6 +230,7 @@ body {
     font-family: "Inter", sans-serif;
     font-size: var(--lille-p-web);
     font-weight: 400;
+    color: var(--taupe-800);
     margin-top: var(--spacing-20);
   }
   .text-italic {
@@ -194,7 +238,42 @@ body {
     font-size: var(--italic-p-web);
     font-style: italic;
     font-weight: 400;
+    color: var(--taupe-800);
     margin-top: var(--spacing-20);
+  }
+
+  .links {
+    font-family: "Inter", sans-serif;
+    font-size: var(--p-web);
+    font-weight: 400;
+    color: var(--pink-700);
+    text-decoration: underline;
+  }
+    .linksblack {
+    font-family: "Inter", sans-serif;
+    font-size: var(--lille-p-web);
+    font-weight: 400;
+    color: var(--taupe-800);
+    text-decoration: underline;
+  }
+
+  /*----------- FOOTER  --------  */
+
+  .footerbaggrund {
+    background-image: url(statiske-elementer/footer-web.svg);
+    aspect-ratio: 1366/534;
+    position: relative;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  /*----------- MENU  --------  */
+  .logo {
+    background-image: url(statiske-elementer/logo-web.svg);
+    aspect-ratio: 1615/3492;
+    position: relative;
+    background-size: 100%;
+    background-repeat: no-repeat;
   }
 }
 
