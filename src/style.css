@@ -50,9 +50,10 @@ _________________________________DESIGN SYSTEM_____________________________
   /* _____________TEKST_______________*/
 
   /* Font scale heading */
-  --display-web: 2.5rem;
+  --display-web: 4.375rem;
   --underoverskrift-1-web: 2rem;
   --underoverskrift-2-web: 1.5rem;
+  --grafisk-display: 2rem;
 
   /* Font scale body text */
   --leading-web: 1.125;
@@ -66,9 +67,10 @@ _________________________________DESIGN SYSTEM_____________________________
   /* _____________TEKST_______________*/
 
   /* Font scale heading */
-  --display-mobil: 2rem;
+  --display-mobil: 2.25rem;
   --underoverskrift-1-mobil: 1.25rem;
   --underoverskrift-2-mobil: 1.1rem;
+  --grafisk-display: 1.75rem;
 
   /* Font scale body text */
   --leading-mobil: 1rem;
@@ -122,6 +124,14 @@ body {
     color: var(--taupe-800);
     margin-top: var(--spacing-m);
   }
+  .grafisk-display {
+    font-family: "Lobster", cursive;
+    font-size: var(--grafisk-display);
+    font-weight: 400;
+    color: var(--taupe-800);
+    margin-top: var(--spacing-l);
+    margin-bottom: var(--spacing-m);
+  }
 
   p {
     font-family: "Inter", sans-serif;
@@ -170,6 +180,13 @@ body {
     background-repeat: no-repeat;
   }
 
+  .footerbaggrund_ipad {
+    background-image: url(statiske-elementer/footer-mobil.svg);
+    aspect-ratio: 1615/3492;
+    position: relative;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
   /*----------- MENU  --------  */
 
   .logo {
@@ -275,6 +292,15 @@ body {
     margin-top: var(--spacing-20);
   }
 
+  .grafisk-display {
+    font-family: "Lobster", cursive;
+    font-size: var(--display-mobil);
+    font-weight: 400;
+    color: var(--taupe-800);
+    margin-top: var(--spacing-l);
+    margin-bottom: var(--spacing-m);
+  }
+
   p {
     font-family: "Inter", sans-serif;
     font-size: var(--p-web);
@@ -317,8 +343,8 @@ body {
   /*----------- FOOTER  --------  */
 
   .footerbaggrund {
-    background-image: url(statiske-elementer/footer-web.svg);
-    aspect-ratio: 1366/534;
+    background-image: url(statiske-elementer/footer-web1.svg);
+    aspect-ratio: 1366/658;
     position: relative;
     background-size: 100%;
     background-repeat: no-repeat;
