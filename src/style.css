@@ -1,3 +1,204 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* 
+_________________________________DESIGN SYSTEM_____________________________
+--------------------------------------------------------------------------- */
+:root {
+  /* Aliases */
+  /* _____________FARVER________________*/
+
+  --green-700: #72aa9a;
+  --green-500: #b0ddd1;
+  --green-100: #e6f6f2;
+  --creme-200: #fbf7f1;
+  --creme-100: #fffdf9;
+  --pink-100: #fff2f8;
+  --pink-200: #f9d2e3;
+  --pink-400: #f5a4c6;
+  --pink-700: #f291ba;
+  --taupe-800: #363636;
+
+  /* _____________KNAPPER________________*/
+
+  --green-700: #72aa9a;
+  --green-500: #b0ddd1;
+  --green-100: #e6f6f2;
+  --creme-200: #fbf7f1;
+  --creme-100: #fffdf9;
+  --pink-100: #fff2f8;
+  --pink-200: #f9d2e3;
+  --pink-400: #f5a4c6;
+  --pink-700: #f291ba;
+  --taupe-800: #363636;
+
+/* _____________SPACING________________*/
+
+  --spacing-xs: 0.625rem; /*(10px)*/
+  --spacing-s: 0.9375rem; /*(15px)*/
+  --spacing-m: 1.25rem; /*(20px)*/
+  --spacing-l: 1.875rem; /*(30px)*/
+  --spacing-xl: 2.5rem; /*(40px)*/
+  --spacing-xxl: 5rem; /*(80px)*/
+  --spacing-afsnit: 3.125rem; /*(50px)*/
+  --spacing-heading: 2.125rem; /*(34px)*/
+
+
+  /* _______________________WEB_____________________________
+-------------------------------------------------------------- */
+
+  /* _____________TEKST_______________*/
+
+  /* Font scale heading */
+  --display-web: 2.5rem;
+  --underoverskrift-1-web: 2rem;
+  --underoverskrift-2-web: 1.5rem;
+
+  /* Font scale body text */
+  --leading-web: 1.125;
+  --p-web: 1rem;
+  --lille-p-web: 0.875;
+  --italic-p-web: 0.875;
+
+
+  /* ________________________MOBIL__________________________
+------------------------------------------------------------- */
+
+  /* _____________TEKST_______________*/
+
+  /* Font scale heading */
+  --display-mobil: 2rem;
+  --underoverskrift-1-mobil: 1.25rem;
+  --underoverskrift-2-mobil: 1.875rem;
+
+  /* Font scale body text */
+  --leading-mobil: 1rem;
+  --p-mobil: 0.875rem;
+  --lille-p-mobil: 0.75;
+  --italic-p-mobil: 0.75;
+
+
+  /* Aliases */
+}
+
+body {
+  line-height: 150%;
+}
+
+/* ---------------------------MOBIL!!!--------------- */
+
+@media only screen and (max-width: 600px) {
+  h1,
+  .heading-h1 {
+    font-family: "Lobster", cursive;
+    font-size: var(--display-mobil);
+    font-weight: 400;
+    margin-top: var(--spacing-40);
+  }
+
+  h2,
+  .heading-h2 {
+    font-family: "Inter", sans-serif;
+    font-size: var(--underoverskrift-1-mobil);
+    font-weight: 400;
+    margin-top: var(--spacing-40);
+  }
+
+  h3,
+  .heading-h3 {
+    font-family: "Inter", sans-serif;
+    font-size: var(--underoverskrift-2-mobil);
+    font-weight: 400;
+    margin-top: var(--spacing-20);
+  }
+
+  .text-lead {
+    font-family: "Inter", sans-serif;
+    font-size: var(--leading-mobil);
+    font-weight: 600;
+    margin-top: var(--spacing-20);
+  }
+
+  .text-p {
+    font-family: "Inter", sans-serif;
+    font-size: var(--p-mobil);
+    font-weight: 400;
+    margin-top: var(--spacing-20);
+  }
+
+  .text-small {
+    font-family: "Inter", sans-serif;
+    font-size: var(--lille-p-mobil);
+    font-weight: 400;
+    margin-top: var(--spacing-20);
+  }
+  .text-italic {
+    font-family: "Inter", sans-serif;
+    font-size: var(--italic-p-mobil);
+    font-style: italic;
+    font-weight: 400;
+    margin-top: var(--spacing-20);
+  }
+}
+
+/* ------------------------ WEB!!!! -------------------- */
+
+@media only screen and (min-width: 600px) {
+  h1,
+  .heading-h1 {
+    font-family: "Lobster", cursive;
+    font-size: var(--display-web);
+    font-weight: 400;
+    margin-top: var(--spacing-40);
+  }
+
+  h2,
+  .heading-h2 {
+    font-family: "Inter", sans-serif;
+    font-size: var(--underoverskrift-1-web);
+    font-weight: 400;
+    margin-top: var(--spacing-40);
+  }
+
+  h3,
+  .heading-h3 {
+    font-family: "Inter", sans-serif;
+    font-size: var(--underoverskrift-2-web);
+    font-weight: 400;
+    margin-top: var(--spacing-20);
+  }
+
+  .text-lead {
+    font-family: "Inter", sans-serif;
+    font-size: var(--leading-web);
+    font-weight: 600;
+    margin-top: var(--spacing-20);
+  }
+
+  .text-p {
+    font-family: "Inter", sans-serif;
+    font-size: var(--p-web);
+    font-weight: 400;
+    margin-top: var(--spacing-20);
+  }
+
+  .text-small {
+    font-family: "Inter", sans-serif;
+    font-size: var(--lille-p-web);
+    font-weight: 400;
+    margin-top: var(--spacing-20);
+  }
+  .text-italic {
+    font-family: "Inter", sans-serif;
+    font-size: var(--italic-p-web);
+    font-style: italic;
+    font-weight: 400;
+    margin-top: var(--spacing-20);
+  }
+}
+
+article {
+  max-width: 65ch;
+  margin: 5rem auto;
+}
