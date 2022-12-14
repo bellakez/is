@@ -10,41 +10,78 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Lobster&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Forside</title>
   </head>
-  <body class="lg:spacing_til_h1 forsidebaggrund">
-    <main class="main-spacing">
+  <header>
+    <div class="navbar">
+      <a
+        class="logo float-left w-10 p-0 md:w-1/4 lg:w-1/4"
+        href="index.html"
+      ></a>
+      <div id="myLinks">
+        <a class="float-right" href="omismageriet.html">Om Ismageriet</a>
+        <div class="float-right">
+          <div class="dropdown z-40 h-32">
+            <button class="dropbtn">
+              Vores is
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="bestilis.html">Bestil is</a>
+              <a href="sortiment.html">Sortiment</a>
+              <a href="indhold.html">Indhold i is</a>
+              <a href="gavekort.html">Gavekort</a>
+            </div>
+          </div>
+        </div>
+        <a class="float-right" href="kontakt.html">Kontakt</a>
+      </div>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </header>
+  <body class="lg:spacing_til_h1">
+    <main class="">
       <div class="flex justify-center">
         <h1>Ismageriet</h1>
       </div>
       <!-- ------------------ SECTION1 ---------------- -->
-      <section class="lg:gap-10 md:flex md:justify-center lg:grid lg:grid-cols-2">
-        <div class="mt-5 md:w-full md:mt-5 lg:w-5/6 flex justify-center">
-          <img
-            src="statiske-elementer/forside_ikoner.svg"
-            alt="infoboks om ismageriet"
-          />
-        </div>
-        <div>
-          <div class="element_spacing flex justify-center">
-            <div class="w-1/2">
-              <img src="statiske-elementer/nyhed.svg" alt="" />
-            </div>
+      <section class="forsidebaggrund">
+        <div
+          class="main_spacing lg:main_spacing md:flex md:justify-center lg:grid lg:grid-cols-2 lg:gap-10"
+        >
+          <div class="mt-5 flex justify-center md:mt-5 md:w-full lg:w-5/6">
+            <img
+              src="statiske-elementer/forside_ikoner.svg"
+              alt="infoboks om ismageriet"
+            />
           </div>
-          <div class="sm:element_spacing flex justify-center">
-            <div class="">
-              <img
-                src="statiske-elementer/forside_ugens_favoritter.svg"
-                alt=""
-              />
+          <div>
+            <div class="element_spacing flex justify-center">
+              <div class="w-1/2">
+                <img src="statiske-elementer/nyhed.svg" alt="" />
+              </div>
+            </div>
+            <div class="sm:element_spacing flex justify-center">
+              <div class="">
+                <img
+                  src="statiske-elementer/forside_ugens_favoritter.svg"
+                  alt=""
+                />
+              </div>
             </div>
           </div>
         </div>
       </section>
       <!-- ------------------ SECTION2 ---------------- -->
-      <section class="lg:spacing-_til_h1 iskugle_baggrund">
+      <section
+        class="lg:spacing-_til_h1 main_spacing lg:main_spacing"
+      >
         <div class="flex justify-center">
-          <div>
+          <div class="iskugle_baggrund lg:w-1/2 lg:h-screen">
             <h2 class="spacing_til_h1 flex justify-center">Om os</h2>
             <br />
             <div class="">
@@ -63,31 +100,31 @@
       </section>
 
       <!-- ------------------ SECTION3 ---------------- -->
-      <section class="">
+      <section class="main_spacing lg:main_spacing">
         <div>
           <h2 class="flex justify-center">Andre iselskere siger:</h2>
           <br />
         </div>
         <!-- Slideshow container -->
-        <div class="slideshow-container lg:w-2/3 lg:flex lg:justify-center">
+        <div
+          class="slideshow-container flex justify-center lg:flex lg:w-2/3 lg:justify-center"
+        >
           <!-- Full-width images with number and caption text -->
-          <div class="mySlides fade ">
+          <div class="mySlides fade">
             <div class="numbertext">1 / 3</div>
-            <img src="menu/anmeldelse_1.svg"  />
+            <img src="menu/anmeldelse_1.svg" />
             <div class="text"></div>
           </div>
 
           <div class="mySlides fade">
             <div class="numbertext">2 / 3</div>
-            <img src="menu/anmeldelse_2.svg"  />
+            <img src="menu/anmeldelse_2.svg" />
             <div class="text"></div>
           </div>
 
           <div class="mySlides fade">
             <div class="numbertext">3 / 3</div>
-            <img
-              src="menu/anmeldelse_3.svg"
-            />
+            <img src="menu/anmeldelse_3.svg" />
             <div class="text"></div>
           </div>
         </div>
@@ -101,7 +138,7 @@
       </section>
 
       <!-- ------------------ SECTION4 ---------------- -->
-      <section class="">
+      <section class="main_spacing lg:main_spacing">
         <div class="flex justify-center">
           <div>
             <p class="flex justify-center">
@@ -126,7 +163,7 @@
         <div class="lg:grid lg:grid-cols-3">
           <!-- AMAGER -->
           <div>
-            <h1 class="flex justify-center lg:mt-32 grafisk-display">Amager</h1>
+            <h1 class="grafisk-display flex justify-center lg:mt-32">Amager</h1>
             <div class="flex justify-center lg:mt-8">
               <div class="w-2/3">
                 <p>Rued Langgaards Vej nr. 6E</p>
@@ -141,7 +178,7 @@
           </div>
           <!-- SØBORG -->
           <div>
-            <h1 class="flex justify-center lg:mt-32 grafisk-display">Søborg</h1>
+            <h1 class="grafisk-display flex justify-center lg:mt-32">Søborg</h1>
             <div class="flex justify-center lg:mt-8">
               <div class="w-2/3">
                 <p>Søborg Hovedgade 34</p>
@@ -156,7 +193,9 @@
           </div>
           <!-- NAVIGER -->
           <div>
-            <h1 class="flex justify-center lg:mt-32 grafisk-display">Naviger</h1>
+            <h1 class="grafisk-display flex justify-center lg:mt-32">
+              Naviger
+            </h1>
             <div class="flex justify-center lg:mt-8">
               <div class="grid w-2/3">
                 <a href="" class="links">Kontakt</a>
@@ -183,7 +222,7 @@
     </footer>
     <script type="module" src="./main.js"></script>
     <script>
-            // ------------SLIDESHOW---------
+      // ------------SLIDESHOW---------
 
       let slideIndex = 1;
       showSlides(slideIndex);

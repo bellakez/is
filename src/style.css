@@ -88,7 +88,7 @@ body {
 
 /* ---------------------------MOBIL!!!--------------- */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   h1,
   .heading-h1 {
     font-family: "Lobster", cursive;
@@ -197,26 +197,6 @@ body {
     background-repeat: no-repeat;
   }
 
-  /*----------- BURGER MENU  --------  */
-
-  .hidden {
-    display: none;
-  }
-
-  .hidden_menu {
-    display: block;
-  }
-
-  #menuknap_mobil {
-    display: flex;
-    justify-content: right;
-  }
-
-  #menu {
-    background-color: var(--creme-200);
-    height: 812px;
-  }
-
   /*----------- Spacing på main  --------  */
   .main_spacing {
     margin-left: 10px;
@@ -252,11 +232,47 @@ body {
     background-repeat: no-repeat;
     margin-top: var(--spacing-xl);
   }
+
+  /* --------- BURGER-MENU ---------- */
+  .navbar {
+    overflow: hidden;
+    background-color: var(--creme-200);
+    position: relative;
+  }
+
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .navbar #myLinks {
+    display: none;
+  }
+
+  /* Style navigation menu links */
+  .navbar a {
+    color: var(--taupe-800);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: grid;
+  }
+
+  /* Style the hamburger menu */
+  .navbar a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: var(--taupe-800);
+  }
+
+  /* Add a grey background color on mouse-over */
+  .navbar a:hover {
+    background-color: var(--creme-100);
+    color: var(--taupe-800);
+  }
 }
 
 /* ------------------------ WEB!!!! -------------------- */
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 700px) {
   h1,
   .heading-h1 {
     font-family: "Lobster", cursive;
@@ -353,24 +369,13 @@ body {
   /*----------- MENU  --------  */
   .logo {
     background-image: url(statiske-elementer/logo-web.svg);
-    aspect-ratio: 1615/3492;
+    aspect-ratio: 1070/450;
     position: relative;
     background-size: 100%;
     background-repeat: no-repeat;
+    border: 0;
   }
 
-  /*----------- BURGER MENU  --------  */
-  .hidden {
-    display: none;
-  }
-
-  #menuknap_mobil {
-    display: none;
-  }
-
-  #menu {
-    display: block;
-  }
   /*----------- Spacing af main  --------  */
   .main_spacing {
     margin-left: 236px;
@@ -393,19 +398,28 @@ body {
 
   .forsidebaggrund {
     background-image: url(menu/forsidebaggrund-web.svg);
-    aspect-ratio: 370/370;
     position: relative;
     background-size: 100%;
+    aspect-ratio: 870/390;
     background-repeat: no-repeat;
     margin-top: var(--spacing-m);
   }
   .iskugle_baggrund {
     background-image: url(statiske-elementer/choko_is_bg.svg);
-    aspect-ratio: 870/390;
     position: relative;
     background-size: 100%;
     background-repeat: no-repeat;
     margin-top: var(--spacing-xl);
+  }
+  .navbar {
+    background-image: url(menu/bg_hovedmenu.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: 0;
+  }
+  /* Style the hamburger menu */
+  .navbar a.icon {
+    display: none;
   }
 }
 
@@ -518,4 +532,65 @@ article {
   to {
     opacity: 1;
   }
+}
+
+/*----------------------------- MENU ---------------- */
+
+.navbar {
+  overflow: hidden;
+  /* background-color: var(--taupe-800); */
+}
+
+.navbar a {
+  color: var(--creme-100);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: var(--creme-100);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: "inter", sans-serif;
+  margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: var(--green-500);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--creme-200);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: var(--taupe-800);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--creme-100);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }

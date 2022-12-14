@@ -2,26 +2,17 @@ import "./style.css";
 /* Import af Motion One bibliotek */
 import { animate, stagger, inView, scroll, timeline } from "motion";
 
-/* _________________________________burger menu til mobil__________________________________________ */
-window.addEventListener("load", sidenVises);
 
-function sidenVises() {
-  console.log("sidenVises");
-  document
-    .querySelector("#menuknap_mobil")
-    .addEventListener("click", toggleMenu);
-}
 
-function toggleMenu() {
-  console.log("toggleMenu");
-  document.querySelector("#menu").classList.toggle("hidden");
+/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
 
-  let erSkjult = document.querySelector("#menu").classList.contains("hidden");
+document.querySelector(".navbar").addEventListener("click", myFunction);
 
-  if (erSkjult == true) {
-    document.querySelector("menuknap_mobil").textContent = "☰";
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
   } else {
-    document.querySelector("menuknap_mobil").textContent = "X";
+    x.style.display = "block";
   }
-}
-
+} 
