@@ -8,8 +8,9 @@
     <title>Kategori</title>
   </head>
   <body>
-    <main class="main_spacing">
-      <section>
+    <main>
+      <!-- ------------------ SECTION1 ---------------- -->
+      <section class="main_spacing">
         <h1 class="flex justify-center">Gavekort</h1>
         <div class="gavekort-boks spacing_til_h1">
           <div class="lille-gavekort-boks">
@@ -17,34 +18,81 @@
               Vælg beløb
             </h3>
           </div>
-          <div class="element_spacing flex justify-center">
-            <img class="w-1/2" src="menu/gavekort-siden.svg" alt="" />
+          <div class="lg:grid lg:grid-cols-2">
+            <div class="element_spacing flex justify-center">
+              <img class="w-1/2" src="menu/gavekort-siden.svg" alt="" />
+            </div>
+            <div class="element_spacing flex justify-center">
+              <div>
+                <label class="container"
+                  >150 DKK
+                  <input type="checkbox" checked="checked" />
+                  <span class="checkmark"></span>
+                </label>
+
+                <label class="container"
+                  >200 DKK
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+
+                <label class="container"
+                  >250 DKK
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+
+                <label class="container"
+                  >300 DKK
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+
+                <label class="container"
+                  >600 DKK
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
           </div>
-          <div class="element_spacing flex justify-center">
+          <div class="flex justify-center pt-5 lg:pt-16">
+            <button class="primary_green">Læg i kurv</button>
+          </div>
+        </div>
+      </section>
+      <!-- ------------------ SECTION2 ---------------- -->
+      <section class="forsidebaggrund">
+        <div class="main_spacing">
+          <div class="mt-10 gap-5 lg:mt-20 lg:grid lg:grid-cols-3">
             <div>
-              <label class="container"
-                >One
-                <input type="checkbox" checked="checked" />
-                <span class="checkmark"></span>
-              </label>
-
-              <label class="container"
-                >Two
-                <input type="checkbox" />
-                <span class="checkmark"></span>
-              </label>
-
-              <label class="container"
-                >Three
-                <input type="checkbox" />
-                <span class="checkmark"></span>
-              </label>
-
-              <label class="container"
-                >Four
-                <input type="checkbox" />
-                <span class="checkmark"></span>
-              </label>
+              <h3 class="text-lead lg:mt-20">Praktisk info</h3>
+              <br />
+              <p>
+                Gavekort til brug i Ismageriets webshop: Gavekort købt her på
+                hjemmesiden fremsendes på e-mail og kan kun bruges til online
+                bestillinger. Gavekortene er <strong>gyldige i 3 år</strong> og
+                kan ikke ombyttes til kontanter.
+              </p>
+            </div>
+            <div>
+              <h3 class="text-lead lg:mt-20">Gavekort til fysiske butikker</h3>
+              <br />
+              <p>
+                Gavekort der sælges i butikkerne kan udstedes på det beløb du
+                selv vælger. Gavekortene kan efterfølgende indløses i
+                Ismageriets butikker, men ikke i webshoppen.
+              </p>
+            </div>
+            <div>
+              <h3 class="text-lead lg:mt-20">Gavekort til online webshop</h3>
+              <br />
+              <p>
+                Gavekort til brug i Ismageriets webshop: Gavekort købt her på
+                hjemmesiden fremsendes på e-mail og kan kun bruges til online
+                bestillinger. De udstedes på et fast beløb. De kan ikke indløses
+                i Ismageriets fysiske butikker.
+              </p>
             </div>
           </div>
         </div>
