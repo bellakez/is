@@ -131,6 +131,7 @@ body {
     color: var(--taupe-800);
     margin-top: var(--spacing-l);
     margin-bottom: var(--spacing-m);
+    padding: var(--spacing-xs);
   }
 
   p {
@@ -232,7 +233,21 @@ body {
     background-repeat: no-repeat;
     margin-top: var(--spacing-xl);
   }
+  /*----------- GAVEKORT  --------  */
+  /* __________________________________ */
 
+  .gavekort-boks {
+    width: 355;
+    height: 511;
+    background-color: var(--creme-100);
+    box-shadow: 0px 12px 17px 2px rgba(0, 0, 0, 0.09);
+  }
+  .lille-gavekort-boks {
+    width: 355;
+    height: 44px;
+    box-shadow: 0px 6px 17px rgba(0, 0, 0, 0.09);
+    background-color: var(--creme-200);
+  }
   /* --------- BURGER-MENU ---------- */
   .navbar {
     overflow: hidden;
@@ -480,9 +495,10 @@ body {
     margin-top: var(--spacing-xl);
   }
   .navbar {
-    background-image: url(menu/bg_hovedmenu.svg);
+    background-image: url(menu/bg_hovedmenu_taupe.svg);
     background-size: 100%;
     background-repeat: no-repeat;
+    padding-bottom: var(--spacing-m);
     border: 0;
   }
   /* Style the hamburger menu */
@@ -750,3 +766,71 @@ article {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+
+/* ------------- CHECKBOX ------------------- */
+ /* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: var(--pink-700);
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+} 
