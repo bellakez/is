@@ -2,7 +2,6 @@ import "./style.css";
 /* Import af Motion One bibliotek */
 import { animate, stagger, inView, scroll, timeline } from "motion";
 
-
 const acceptCookie = document.querySelector("#accepter");
 const denyCookie = document.querySelector("#afvis");
 const cookieboks = document.querySelector("#cookieboks");
@@ -39,3 +38,13 @@ inView(".fotogalleryinview", ({ target }) => {
     { duration: 1, delay: stagger(1, { start: 0.25 }) }
   );
 });
+
+document
+  .querySelectorAll(".parallaxcontainer_is")
+  .forEach((parallaxcontainer) => {
+    const elementderskalparallaxes2 =
+      parallaxcontainer.querySelector(".her_er_teksten");
+    scroll(animate(elementderskalparallaxes2, { y: [-200, 500] }), {
+      target: elementderskalparallaxes2,
+    });
+  });
