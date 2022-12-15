@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Kategori</title>
+  </head>
+  <body class="">
+    <main>
+      <!-- ------------------ SECTION1 ---------------- -->
+      <section class="main_spacing grid place-content-center">
+        <h1 class="flex justify-center">Din kurv</h1>
+        <div class="gavekort-boks md:gavekort-boks1 lg:kurv_boks_stor spacing_til_h1 pb-20">
+          <div class="lille-gavekort-boks grid grid-cols-3">
+            <h3 class="flex justify-center md:pt-2 lg:pt-2">Vare</h3>
+            <h3 class="flex justify-center md:pt-2 lg:pt-2">Beløb</h3>
+            <h3 class="flex justify-center md:pt-2 lg:pt-2">Antal</h3>
+          </div>
+          <!-- pris og antal -->
+          <div class="grid grid-cols-3 md:pt-5 lg:pt-5">
+            <p class="text-lead flex justify-center">Literboks</p>
+            <p class="text-lead flex justify-center">118,00 DKK</p>
+            <p class="text-lead flex justify-center">1</p>
+          </div>
+          <!-- varianter af is boks -->
+          <div class="grid grid-cols-3 md:pt-5 lg:pt-5">
+            <div class="flex justify-center">
+              <div class="justify-center pl-4 pt-2 lg:pl-0">
+                <p class="flex">Skildpadde</p>
+                <p class="flex">Hindbærsnitte</p>
+                <p class="flex">Amagerisen</p>
+                <p class="flex">Mytte & chokolade</p>
+              </div>
+            </div>
+            <!-- tom div -->
+            <div></div>
+            <!-- ikoner om slet og rediger -->
+            <div class="pt-16 lg:pt-20">
+              <div class="flex justify-center">
+                <img class="p-2" src="menu/trash.svg" alt="" />
+                <img class="p-2" src="menu/edit.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <hr style="width: 90%" />
+          <!-- subtotal boks starter her -->
+          <div class="grid grid-cols-3">
+            <div class="flex justify-center">
+              <h2>Subtotal</h2>
+            </div>
+            <div class="flex justify-center">
+              <h3 class="grafisk-display" style="color: var(--green-700)">
+                118,0 DKK
+              </h3>
+            </div>
+          </div>
+          <!-- rabat boks starter her -->
+          <div class="grid grid-cols-3">
+            <div class="flex justify-center">
+              <p>Rabat</p>
+            </div>
+            <div class="flex justify-center">
+              <p>13,00 DKK</p>
+            </div>
+          </div>
+          <!-- rabat instast og knap -->
+          <div class="grid place-content-center">
+            <div class="justify-center lg:grid lg:grid-cols-2">
+              <form class="pt-6" action="/action_page.php">
+                <input type="text" id="fname" name="fname" /><br />
+              </form>
+              <div class="flex justify-center pt-5 lg:pt-6">
+                <button class="primary_pink">Læg i kurv</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ------------------ SECTION2 ---------------- -->
+      <section class="main_spacing grid place-content-center">
+
+      </section>
+    </main>
+  </body>
+  <script type="module" src="./main.js"></script>
+</html>
