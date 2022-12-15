@@ -332,7 +332,7 @@ height: 62px;
   /* ------------------KNAPPER I MOBIL --------------*/
   .primary_green {
     width: 152px;
-    height: 37px;
+    height: 47px;
     background-color: var(--green-700);
     font-size: 1rem;
     color: var(--creme-100);
@@ -342,7 +342,7 @@ height: 62px;
 
   .primary_pink {
     width: 152px;
-    height: 37px;
+    height: 47px;
     background-color: var(--pink-400);
     font-size: 1rem;
     color: var(--creme-100);
@@ -957,4 +957,19 @@ hr {
   border-radius: 5px;
   border-color: #d1d1d1;
   background-color: #f9f9f9;
+}
+
+.fname {
+  border-radius: 5px;
+  border-color: var(--green-500);;
+  background-color: #f9f9f9;
+  font-size: 1rem;
+}
+
+.fname1 {
+    width: 100px;
+  border-radius: 5px;
+  border-color: var(--green-500);
+  background-color: #f9f9f9;
+  font-size: 1rem;
 }
