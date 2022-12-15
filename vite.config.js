@@ -17,7 +17,10 @@ export default defineConfig({
         bestilis: resolve(__dirname, "src/bestilis.html"),
         bestiliskategori: resolve(__dirname, "src/bestilis-kategori.html"),
         bestilisliterboks: resolve(__dirname, "src/bestilis-literboks.html"),
-        bestilisdinliterboks: resolve(__dirname, "src/bestilis-dinliterboks.html"),
+        bestilisdinliterboks: resolve(
+          __dirname,
+          "src/bestilis-dinliterboks.html"
+        ),
         bestilisoversigt: resolve(__dirname, "src/bestilis-oversigt.html"),
         kurvfyldt: resolve(__dirname, "src/kurv-fyldt.html"),
         kurvtom: resolve(__dirname, "src/kurv-tom.html"),
@@ -28,7 +31,8 @@ export default defineConfig({
         gavekort: resolve(__dirname, "src/gavekort.html"),
         omismageriet: resolve(__dirname, "src/omismageriet.html"),
         kontakt: resolve(__dirname, "src/kontakt.html"),
-        sitemap: resolve(__dirname, "src/sitemap.html"),
+        sitemap: resolve(__dirname, "src/sitmap.html"),
+        aproved: resolve(__dirname, "src/betaling-aproved.html"),
 
         // about: resolve(__dirname, "src/about.html"),
       },
