@@ -56,5 +56,3 @@ document.querySelectorAll(".parallaxcontainer").forEach((parallaxcontainer) => {
   });
 });
 
-
-
