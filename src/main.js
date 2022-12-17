@@ -39,6 +39,8 @@ inView(".fotogalleryinview", ({ target }) => {
   );
 });
 
+
+
 document
   .querySelectorAll(".parallaxcontainer_is")
   .forEach((parallaxcontainer) => {
