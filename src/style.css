@@ -998,6 +998,7 @@ hr {
   background-color: var(--pink-100);
   cursor: pointer;
   white-space: nowrap;
+  width: 408px;
 }
 
 .dd-button:after {
@@ -1026,6 +1027,9 @@ hr {
   top: 100%;
   background-color: var(--pink-100);
   list-style-type: none;
+  display: flex;
+  justify-content: center;
+  width: 408px;
 }
 
 .dd-input + .dd-menu {
@@ -1034,22 +1038,15 @@ hr {
 
 .dd-input:checked + .dd-menu {
   display: block;
+  display: flex;
+  justify-content: center;
 }
 
 .dd-menu li {
   padding: 10px 20px;
-  cursor: pointer;
   white-space: nowrap;
-}
-
-.dd-menu li:hover {
-  background-color: #f6f6f6;
-}
-
-.dd-menu li a {
-  display: block;
-  margin: -10px -20px;
-  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
 }
 
 /* Dropdown knap til Søborg */
@@ -1057,6 +1054,7 @@ hr {
 .dropdown_soeborg {
   display: inline-block;
   position: relative;
+  width: 408px;
 }
 
 .dd-button-s {
@@ -1065,6 +1063,7 @@ hr {
   background-color: var(--green-100);
   cursor: pointer;
   white-space: nowrap;
+  width: 408px;
 }
 
 .dd-button-s:after {
@@ -1093,6 +1092,9 @@ hr {
   top: 100%;
   background-color: var(--green-100);
   list-style-type: none;
+  display: flex;
+  justify-content: center;
+  width: 408px;
 }
 
 .dd-input-s + .dd-menu-s {
@@ -1101,20 +1103,13 @@ hr {
 
 .dd-input-s:checked + .dd-menu-s {
   display: block;
+  display: flex;
+  justify-content: center;
 }
 
 .dd-menu-s li {
   padding: 10px 20px;
-  cursor: pointer;
   white-space: nowrap;
-}
-
-.dd-menu-s li:hover {
-  background-color: #f6f6f6;
-}
-
-.dd-menu-s li a {
-  display: block;
-  margin: -10px -20px;
-  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
 }
