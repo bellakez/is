@@ -54,6 +54,7 @@ _________________________________DESIGN SYSTEM_____________________________
   --underoverskrift-1-web: 2rem;
   --underoverskrift-2-web: 1.5rem;
   --grafisk-display: 2rem;
+  --grafisk-display-lille: 1.3rem;
 
   /* Font scale body text */
   --leading-web: 1.125;
@@ -296,6 +297,7 @@ body {
   /* Hide the links inside the navigation menu (except for logo/home) */
   .navbar #myLinks {
     display: none;
+    height: 250px;
   }
 
   /* Style navigation menu links */
@@ -320,6 +322,10 @@ body {
   .navbar a:hover {
     background-color: var(--creme-100);
     color: var(--taupe-800);
+  }
+
+  .navbar a:active {
+    background-color: var(--creme-100);
   }
 
   /* ------------------LYSERØD CARD I MOBIL til indhold --------------*/
@@ -437,6 +443,16 @@ body {
   .grafisk-display {
     font-family: "Lobster", cursive;
     font-size: var(--display-mobil);
+    font-weight: 400;
+    color: var(--taupe-800);
+    margin-top: var(--spacing-l);
+    margin-bottom: var(--spacing-m);
+    padding: var(--spacing-xs);
+  }
+
+  .grafisk-display-lille {
+    font-family: "Lobster", cursive;
+    font-size: var(--grafisk-display-lille);
     font-weight: 400;
     color: var(--taupe-800);
     margin-top: var(--spacing-l);
@@ -1112,4 +1128,140 @@ hr {
   white-space: nowrap;
   display: flex;
   justify-content: center;
+}
+
+/* ----------------------MENU MENU MENU------------------ */
+a {
+  color: #000;
+}
+
+/* header */
+
+.header_try {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.header_try ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.header_try li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+}
+
+.header_try li a:hover,
+.header .menu-btn:hover {
+  background-color: #f4f4f4;
+}
+
+.header_try .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* menu */
+
+.header_try .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+/* menu icon */
+
+.header_try .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header_try .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 18px;
+}
+
+.header_try .menu-icon .navicon:before,
+.header_try .menu-icon .navicon:after {
+  background: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.header_try .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header_try .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header_try .menu-btn {
+  display: none;
+}
+
+.header_try .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header_try .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header_try .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header_try .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header_try .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header_try .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .header_try li {
+    float: left;
+  }
+  .header_try li a {
+    padding: 20px 30px;
+  }
+  .header_try .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header_try .menu-icon {
+    display: none;
+  }
 }
