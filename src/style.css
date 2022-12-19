@@ -1636,7 +1636,104 @@ hr {
 }
 
 .open-input-jordbaer:checked
-  + .open-contents--jordbaer
+  + .open-contents-jordbaer
   > .open-label-jordbaer:after {
+  display: block;
+}
+
+/* ----- INFO BOKS TIL IS OVERSIGTEN -> blodappelsin ----- */
+
+.open-wrap-appelsin {
+  display: block;
+}
+
+@media only screen and (min-width: 767px) {
+  .open-wrap-appelsin {
+    margin: 0 0 32px;
+  }
+}
+
+.open-input-appelsin {
+  display: none;
+}
+
+.open-label-appelsin {
+  position: relative;
+  display: block;
+  padding: 8px 8px 8px 28px;
+  line-height: 24px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 40px;
+}
+
+.open-label-appelsin:before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 12px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: solid 1px var(--pink-700);
+  border-radius: 5px;
+}
+
+.open-label-appelsin:after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 8px;
+  display: none;
+  width: 7px;
+  height: 14px;
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+  border-bottom: 3px solid var(--pink-700);
+  border-right: 3px solid var(--pink-700);
+}
+
+@media only screen and (min-width: 767px) {
+  .open-label-appelsin {
+    padding: 8px 8px 8px 32px;
+  }
+  .open-label-appelsin:before {
+    left: 8px;
+  }
+  .open-label-appelsin:after {
+    left: 13px;
+  }
+}
+
+.open-contents-appelsin {
+  float: left;
+  padding-right: 20px;
+}
+
+.open-contents__inner-appelsin {
+  display: none;
+}
+
+.open-input-appelsin:checked
+  + .open-contents-appelsin
+  > .open-contents__inner-appelsin {
+  display: block;
+  width: 250px;
+  position: absolute;
+  background-color: var(--creme-200);
+  padding: 5px;
+}
+
+@media only screen and (min-width: 767px) {
+  .open-input-appelsin:checked
+    + .open-contents-appelsin
+    > .open-contents__inner-appelsin {
+    padding: 4px 0 0 0;
+  }
+}
+
+.open-input-appelsin:checked
+  + .open-contents-appelsin
+  > .open-label--appelsin:after {
   display: block;
 }

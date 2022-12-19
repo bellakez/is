@@ -309,12 +309,39 @@
             <!-- blodappelsin -->
             <div class="sortiment-boks flex justify-center bg-[#fbf7f1] p-2">
               <div class="grid place-content-center">
-                <img
-                  class="billede"
-                  src="is-varianter/sorbet/blodappelsin.svg"
-                  alt="Blodappelsin"
-                />
+                <!-- INFO BOKSEN start -->
+                <div class="open-wrap-appelsin">
+                  <input
+                    type="checkbox"
+                    name="open-btn-appelsin"
+                    id="open-deli-01-appelsin"
+                    class="open-input-appelsin"
+                  />
+                  <div class="open-contents-appelsin">
+                    <label
+                      for="open-deli-01-appelsin"
+                      class="open-label-appelsin"
+                    >
+                      Info
+                    </label>
+                    <div class="open-contents__inner-appelsin">
+                      Frisk og syrlig Allergener: Kan indeholde spor af nødder
+                      og jordnødder. 
+                    </div>
+                  </div>
+                </div>
+                <!-- INFO BOKSEN slut -->
+                <div class="flex justify-center">
+                  <img
+                    class="billede"
+                    src="is-varianter/sorbet/blodappelsin.svg"
+                    alt="Blodappelsin"
+                  />
+                </div>
                 <p class="flex justify-center pt-2 text-center">Blodappelsin</p>
+                <div class="hidden pt-10 md:hidden lg:block">
+                  <a href=""> <button class="primary_taupe">Vælg</button></a>
+                </div>
               </div>
             </div>
             <!-- havtorn -->
