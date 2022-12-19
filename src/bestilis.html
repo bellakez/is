@@ -7,8 +7,36 @@
     <link rel="stylesheet" href="style.css" />
     <title>Bestil is</title>
   </head>
-  <body class="main_spacing">
-    <main>
+    <header>
+    <div class="topnav menu-baggrund" id="myTopnav">
+      <div class="right-side">
+        <a href="index.html" class="logo md:w-40 lg:w-40"></a>
+      </div>
+      <a href="kontakt.html">Kontakt</a>
+      <a href="omismageriet.html">Om ismageriet</a>
+      <div class="dropdown">
+        <button class="dropbtn">
+          Vores is ▽
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="bestilis.html">Bestil is</a>
+          <a href="indhold.html">Is indhold</a>
+          <a href="sortiment.html">Sortiment</a>
+          <a href="gavekort.html">Gavekort</a>
+        </div>
+      </div>
+      <a
+        href="javascript:void(0);"
+        style="font-size: 15px"
+        class="icon"
+        onclick="myFunction()"
+        >&#9776;</a
+      >
+    </div>
+  </header>
+  <body>
+    <main class="main_spacing">
       <div class="flex justify-center">
         <h1>Bestil is</h1>
       </div>
@@ -130,6 +158,79 @@
         </div>
       </section>
     </main>
+
+    <footer class="flex justify-center">
+      <div class="md:footerbaggrund_ipad footerbaggrund">
+        <div class="lg:grid lg:grid-cols-3">
+          <!-- AMAGER -->
+          <div>
+            <h1 class="grafisk-display flex justify-center lg:mt-32">Amager</h1>
+            <div class="flex justify-center lg:mt-8">
+              <div class="lg:w-2/3">
+                <p>Rued Langgaards Vej nr. 6E</p>
+                <p>2300 København S</p>
+                <p>Tlf. : 60 60 10 40</p>
+                <div class="grid">
+                  <a href="" class="links">Amager@ismageriet.dk</a>
+                  <a href="" class="links">Se rutevejledning</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- SØBORG -->
+          <div>
+            <h1 class="grafisk-display flex justify-center lg:mt-32">Søborg</h1>
+            <div class="flex justify-center lg:mt-8">
+              <div class="lg:w-2/3">
+                <p>Søborg Hovedgade 34</p>
+                <p>2870 Dyssegård</p>
+                <p>Tlf. : 60 60 10 40</p>
+                <div class="grid">
+                  <a href="" class="links">Amager@ismageriet.dk</a>
+                  <a href="" class="links">Se rutevejledning</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- NAVIGER -->
+          <div>
+            <h1 class="grafisk-display flex justify-center lg:mt-32">
+              Naviger
+            </h1>
+            <div class="flex justify-center lg:mt-8">
+              <div class="grid lg:w-2/3">
+                <a href="" class="links">Kontakt</a>
+                <a href="" class="links">Åbningstider</a>
+                <a href="" class="links">FAQ</a>
+                <a href="" class="links">Sitemap</a>
+                <a href="" class="links">Kontrolrapport</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- LOGO -->
+        <div class="jusify-center flex" style="justify-content: center">
+          <div class="w-2/3 lg:w-1/4">
+            <img src="statiske-elementer/logo-web.svg" alt="logo" />
+          </div>
+        </div>
+        <!-- SIDSTE LINKS I FOOTER -->
+        <div class="flex justify-center gap-3">
+          <a href="" class="linksblack">Cookiepolitik</a>
+          <a href="" class="linksblack">Forretningsbetingelser</a>
+        </div>
+      </div>
+    </footer>
     <script type="module" src="./main.js"></script>
+      <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
   </body>
 </html>

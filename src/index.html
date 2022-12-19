@@ -16,6 +16,7 @@
     />
     <title>Forside</title>
   </head>
+
   <header>
     <div class="relative">
       <!-- HER ER COOKIEBOKSEN  -->
@@ -60,33 +61,30 @@
         </div>
       </div>
       <!-- NAVAGITAION HER -->
-      <div class="navbar">
-        <a
-          class="logo float-left w-10 p-0 md:w-1/4 lg:w-1/4"
-          href="index.html"
-        ></a>
-        <div id="myLinks">
-          <a class="lg:float-right" href="kontakt.html">Kontakt</a>
-          <a class="lg:float-right" href="omismageriet.html">Om Ismageriet</a>
-          <div class="lg:float-right">
-            <div class="dropdown z-40 h-32">
-              <button class="dropbtn">
-                Vores is
-                <i class="fa fa-caret-down"></i>
-              </button>
-              <div class="dropdown-content">
-                <a href="bestilis.html">Bestil is</a>
-                <a href="sortiment.html">Sortiment</a>
-                <a href="indhold.html">Indhold i is</a>
-                <a href="gavekort.html">Gavekort</a>
-              </div>
-            </div>
+      <div class="topnav menu-baggrund" id="myTopnav">
+        <div class="right-side">
+          <a href="index.html" class="logo md:w-40 lg:w-40"></a>
+        </div>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="omismageriet.html">Om ismageriet</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Vores is ▽   
+          </button>
+          <div class="dropdown-content">
+            <a href="bestilis.html">Bestil is</a>
+            <a href="indhold.html">Is indhold</a>
+            <a href="sortiment.html">Sortiment</a>
+            <a href="gavekort.html">Gavekort</a>
           </div>
         </div>
-        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
+        <a
+          href="javascript:void(0);"
+          style="font-size: 15px"
+          class="icon"
+          onclick="myFunction()"
+          >&#9776;</a
+        >
       </div>
     </div>
   </header>
@@ -105,7 +103,7 @@
               src="statiske-elementer/forside_ikoner.svg"
               alt="infoboks om ismageriet"
             />
-            <div class="pt-6 lg:pt-10">
+            <div class="pt-6 lg:pt-10 flex justify-center">
               <a href="bestilis-kategori.html"
                 ><button class="primary_pink">Bestil is</button></a
               >
@@ -113,16 +111,16 @@
           </div>
           <div>
             <div class="element_spacing flex justify-center">
-              <div class="w-1/2">
-                <img src="statiske-elementer/nyhed.svg" alt="" />
+              <div class="hover:animate-spin w-1/2">
+                <a href="sortiment.html#season"><img src="statiske-elementer/nyhed.svg" alt="nyhed is" /></a>
               </div>
             </div>
             <div class="sm:element_spacing flex justify-center">
               <div class="">
-                <img
+                <a href="sortiment.html#smag"><img
                   src="statiske-elementer/forside_ugens_favoritter.svg"
-                  alt=""
-                />
+                  alt="ugens favoritter is"
+                /></a>
               </div>
             </div>
           </div>
@@ -205,7 +203,7 @@
         </div>
         <br />
         <!-- The dots/circles -->
-        <div style="text-align: center">
+        <div class="flex justify-center"  style="text-align: center">
           <span class="dot" onclick="currentSlide(1)"></span>
           <span class="dot" onclick="currentSlide(2)"></span>
           <span class="dot" onclick="currentSlide(3)"></span>
@@ -331,6 +329,15 @@
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " active";
       }
+
+          function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
     </script>
   </body>
 </html>
