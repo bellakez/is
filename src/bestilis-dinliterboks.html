@@ -81,10 +81,17 @@
           </ul>
         </div>
       </div>
+      <!-- DIN ISBOKS ILLUSTRATION starter -->
+      <section class="isboks-section">
+        <div class="isboks-container">
+          <img src="menu/din_isboks_oversigt.svg" alt="din literboks" />
+        </div>
+      </section>
+      <!-- DIN ISBOKS ILLUSTRATION slut -->
       <!-- ------------------ SECTION2 ---------------- -->
       <section class="main_spacing">
         <!-- -------- !!!sæson is!!!! ------- -->
-        <h2 id="season" class="element_spacing flex justify-center">
+        <h2 id="season" class="element_spacing flex justify-center pb-10">
           Sæson is
         </h2>
         <div class="flex justify-center">
@@ -93,7 +100,29 @@
             <div class="flex justify-center">
               <div class="sortiment-boks bg-[#fbf7f1] p-2">
                 <div class="grid place-content-center">
-                  <div class="flex justify-center pt-8">
+                  <!-- INFO BOKSEN start -->
+                  <div class="open-wrap">
+                    <input
+                      type="checkbox"
+                      name="open-btn"
+                      id="open-deli-01"
+                      class="open-input"
+                    />
+                    <div class="open-contents">
+                      <label for="open-deli-01" class="open-label">
+                        Info
+                      </label>
+                      <div class="open-contents__inner">
+                        Iscreme med syltet appelsin, chokoladecreme, og
+                        chokoladekage. Allergener: Mælkeprodukter (herunder
+                        laktose), æg, soja, nødder (hasselnødder), gluten
+                        (hvede), og kan indeholde spor af andre nødder og
+                        jordnødder.
+                      </div>
+                    </div>
+                  </div>
+                  <!-- INFO BOKSEN slut -->
+                  <div class="flex justify-center">
                     <img
                       class="billede"
                       src="is-varianter/season/juletwist.svg"
@@ -101,7 +130,7 @@
                     />
                   </div>
                   <p class="flex justify-center pt-2 text-center">Juletwist</p>
-                  <div class="hidden pt-20 md:hidden lg:block">
+                  <div class="hidden pt-8 md:hidden lg:block">
                     <a href=""> <button class="primary_taupe">Vælg</button></a>
                   </div>
                 </div>
@@ -112,7 +141,31 @@
             <div class="flex justify-center">
               <div class="sortiment-boks flex justify-center bg-[#fbf7f1] p-2">
                 <div class="grid place-content-center">
-                  <div class="flex justify-center pt-10">
+                  <!-- INFO BOKSEN start -->
+                  <div class="open-wrap-pebernod">
+                    <input
+                      type="checkbox"
+                      name="open-btn-pebernod"
+                      id="open-deli-01-pebernod"
+                      class="open-input-pebernod"
+                    />
+                    <div class="open-contents-pebernod">
+                      <label
+                        for="open-deli-01-pebernod"
+                        class="open-label-pebernod"
+                      >
+                        Info
+                      </label>
+                      <div class="open-contents__inner-pebernod">
+                        Pebernødde-is med et lag af pebernødde-crumble, toppet
+                        med karamelganache. Allergener: Mælkeprodukter (herunder
+                        laktose), æg, gluten (hvedemel), og kan indeholde spor
+                        af nødder og jordnødder.
+                      </div>
+                    </div>
+                  </div>
+                  <!-- INFO BOKSEN slut -->
+                  <div class="flex justify-center">
                     <img
                       class="billede"
                       src="is-varianter/season/pebernoed.svg"
@@ -122,43 +175,102 @@
                   <p class="flex justify-center pt-2 text-center">
                     Pebernødde creme
                   </p>
-                  <div class="hidden pt-20 md:hidden lg:block">
+                  <div class="hidden pt-10 md:hidden lg:block">
                     <a href=""> <button class="primary_taupe">Vælg</button></a>
                   </div>
                 </div>
               </div>
             </div>
+
             <!-- isalamande -->
             <div class="sortiment-boks flex justify-center bg-[#fbf7f1] p-2">
               <div class="grid place-content-center">
-                <img
-                  class="billede"
-                  src="is-varianter/season/isalamande.svg"
-                  alt="Islamande m. kirsebærsovs"
-                />
+                <!-- INFO BOKSEN start -->
+                <div class="open-wrap-isalamande">
+                  <input
+                    type="checkbox"
+                    name="open-btn-isalamande"
+                    id="open-deli-01-isalamande"
+                    class="open-input-isalamande"
+                  />
+                  <div class="open-contents-isalamande">
+                    <label
+                      for="open-deli-01-isalamande"
+                      class="open-label-isalamande"
+                    >
+                      Info
+                    </label>
+                    <div class="open-contents__inner-isalamande">
+                      Isalamande med vanilje, ristede mandler og kirsebærsovs.
+                      Allergener: Mælkeprodukter (herunder laktose), nødder
+                      (mandler), og kan indeholde spor af andre nødder og
+                      jordnødder. 
+                    </div>
+                  </div>
+                </div>
+                <!-- INFO BOKSEN slut -->
+                <div class="flex justify-center">
+                  <img
+                    class="billede"
+                    src="is-varianter/season/isalamande.svg"
+                    alt="Islamande m. kirsebærsovs"
+                  />
+                </div>
                 <p class="flex justify-center pt-2 text-center">
                   Islamande-kirsebærsovs
                 </p>
+                <div class="hidden pt-10 md:hidden lg:block">
+                  <a href=""> <button class="primary_taupe">Vælg</button></a>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
         <!-- -------- !!!Sorbet is!!!! ------- -->
-        <h2 id="sorbet" class="element_spacing flex justify-center">
+        <h2 id="sorbet" class="element_spacing flex justify-center pb-10">
           Sorbet is
         </h2>
         <div class="flex justify-center">
           <div class="grid grid-cols-3 gap-2 lg:gap-10">
             <!-- jordbær -->
-            <div class="sortiment-boks flex justify-center bg-[#fbf7f1] p-2">
+            <div
+              class="sortiment-boks mb-10 flex justify-center bg-[#fbf7f1] p-2"
+            >
               <div class="grid place-content-center">
-                <img
-                  class="billede"
-                  src="is-varianter/sorbet/jordbaer.svg"
-                  alt="Jordbær"
-                />
+                <!-- INFO BOKSEN start -->
+                <div class="open-wrap-jordbaer">
+                  <input
+                    type="checkbox"
+                    name="open-btn-jordbaer"
+                    id="open-deli-01-jordbaer"
+                    class="open-input-jordbaer"
+                  />
+                  <div class="open-contents-jordbaer">
+                    <label
+                      for="open-deli-01-jordbaer"
+                      class="open-label-jordbaer"
+                    >
+                      Info
+                    </label>
+                    <div class="open-contents__inner-jordbaer">
+                      Allergener: Kan indeholde spor af soja, nødder og
+                      jordnødder. 
+                    </div>
+                  </div>
+                </div>
+                <!-- INFO BOKSEN slut -->
+                <div class="flex justify-center">
+                  <img
+                    class="billede"
+                    src="is-varianter/sorbet/jordbaer.svg"
+                    alt="Jordbær"
+                  />
+                </div>
                 <p class="flex justify-center pt-2 text-center">Jordbær</p>
+                <div class="hidden pt-10 md:hidden lg:block">
+                  <a href=""> <button class="primary_taupe">Vælg</button></a>
+                </div>
               </div>
             </div>
             <!-- blodappelsin -->
@@ -214,13 +326,15 @@
         </div>
 
         <!-- -------- !!!chokolade/fløde is!!!! ------- -->
-        <h2 id="choko" class="element_spacing flex justify-center">
+        <h2 id="choko" class="element_spacing flex justify-center pb-10">
           Chokolade/føde is
         </h2>
         <div class="flex justify-center">
           <div class="grid grid-cols-3 gap-2 lg:gap-10">
             <!-- skildpadde -->
-            <div class="sortiment-boks flex justify-center bg-[#fbf7f1] p-2">
+            <div
+              class="sortiment-boks mb-10 flex justify-center bg-[#fbf7f1] p-2"
+            >
               <div class="grid place-content-center">
                 <img
                   class="billede"
@@ -282,7 +396,9 @@
               </div>
             </div>
             <!-- hvid choko -->
-            <div class="sortiment-boks flex justify-center bg-[#fbf7f1] p-2">
+            <div
+              class="sortiment-boks mb-10 flex justify-center bg-[#fbf7f1] p-2"
+            >
               <div class="grid place-content-center">
                 <img
                   class="billede"
@@ -297,7 +413,9 @@
         <div class="flex justify-center">
           <div class="grid grid-cols-3 gap-2 lg:gap-10">
             <!-- peanut karamel -->
-            <div class="sortiment-boks flex justify-center bg-[#fbf7f1] p-2">
+            <div
+              class="sortiment-boks mb-10 flex justify-center bg-[#fbf7f1] p-2"
+            >
               <div class="grid place-content-center">
                 <img
                   class="billede"
@@ -324,11 +442,15 @@
         </div>
 
         <!-- -------- !!! Smag !!! ------- -->
-        <h2 id="smag" class="element_spacing flex justify-center">Klassiske</h2>
+        <h2 id="smag" class="element_spacing flex justify-center pb-10">
+          Klassiske
+        </h2>
         <div class="flex justify-center">
           <div class="grid grid-cols-3 gap-2 lg:gap-10">
             <!-- Vanilie -->
-            <div class="sortiment-boks flex justify-center bg-[#fbf7f1] p-2">
+            <div
+              class="sortiment-boks mb-10 flex justify-center bg-[#fbf7f1] p-2"
+            >
               <div class="grid place-content-center">
                 <img
                   class="billede"
@@ -366,7 +488,9 @@
         <div class="flex justify-center">
           <div class="grid grid-cols-3 gap-2 lg:gap-10">
             <!-- Kokos -->
-            <div class="sortiment-boks flex justify-center bg-[#fbf7f1] p-2">
+            <div
+              class="sortiment-boks mb-10 flex justify-center bg-[#fbf7f1] p-2"
+            >
               <div class="grid place-content-center">
                 <img
                   class="billede"
@@ -415,7 +539,9 @@
               </div>
             </div>
             <!-- rom/rosin -->
-            <div class="sortiment-boks flex justify-center bg-[#fbf7f1] p-2">
+            <div
+              class="sortiment-boks mb-10 flex justify-center bg-[#fbf7f1] p-2"
+            >
               <div class="grid place-content-center">
                 <img
                   class="billede"
@@ -473,7 +599,9 @@
         </div>
 
         <!-- -------- !!! Kage is !!! ------- -->
-        <h2 id="kage" class="element_spacing flex justify-center">Kage is</h2>
+        <h2 id="kage" class="element_spacing flex justify-center pb-10">
+          Kage is
+        </h2>
         <div class="flex justify-center">
           <div class="grid grid-cols-3 gap-2 lg:gap-10">
             <!-- hindbærsnitte -->
@@ -501,7 +629,9 @@
               </div>
             </div>
             <!-- kaffe -->
-            <div class="sortiment-boks flex justify-center bg-[#fbf7f1] p-2">
+            <div
+              class="sortiment-boks mb-10 flex justify-center bg-[#fbf7f1] p-2"
+            >
               <div class="grid place-content-center">
                 <img
                   class="billede"
