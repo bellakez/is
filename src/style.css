@@ -207,14 +207,14 @@ body {
   }
   /*----------- sortiment billede  --------  */
 
-   .isske {
+  .isske {
     background-image: url(statiske-elementer/isske.svg);
     aspect-ratio: 280/160;
     position: relative;
     background-size: 100%;
     background-repeat: no-repeat;
   }
-    .isske-fyldt {
+  .isske-fyldt {
     background-image: url(statiske-elementer/isske-medis.svg);
     aspect-ratio: 280/160;
     position: relative;
@@ -313,51 +313,11 @@ body {
     position: sticky;
     left: 5%;
     width: 100%;
-}
+  }
 
-.billede {
+  .billede {
     width: 86px;
     height: 86px;
-}
-  /* --------- BURGER-MENU ---------- */
-  .navbar {
-    overflow: hidden;
-    background-color: var(--creme-200);
-    position: relative;
-  }
-
-  /* Hide the links inside the navigation menu (except for logo/home) */
-  .navbar #myLinks {
-    display: none;
-    height: 250px;
-  }
-
-  /* Style navigation menu links */
-  .navbar a {
-    color: var(--taupe-800);
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: grid;
-  }
-
-  /* Style the hamburger menu */
-  .navbar a.icon {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-    color: var(--taupe-800);
-  }
-
-  /* Add a grey background color on mouse-over */
-  .navbar a:hover {
-    background-color: var(--creme-100);
-    color: var(--taupe-800);
-  }
-
-  .navbar a:active {
-    background-color: var(--creme-100);
   }
 
   /* ------------------LYSERØD CARD I MOBIL til indhold --------------*/
@@ -431,6 +391,82 @@ body {
     color: var(--taupe-800);
     font-family: "Inter", sans-serif;
     font-weight: 400;
+  }
+
+  /* ------------DROP DOWN TIL HOVED NAVIGATION------------- */
+
+  /* Dropdown */
+  .menu_skrift a {
+    color: black;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000000;
+  }
+
+  a:hover {
+    color: #222222;
+  }
+
+  .dropdown_menu {
+    display: inline-block;
+    position: relative;
+  }
+
+  .klik-button {
+    display: inline-block;
+    padding: 10px 30px 10px 20px;
+    background-color: #fffdf9;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
+  .klik-button:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid black;
+  }
+
+  .klik-input {
+    display: none;
+  }
+
+  .klik-menu {
+    position: absolute;
+    top: 100%;
+    margin: 0px 0 0 0;
+    background-color: #fffdf9;
+    list-style-type: none;
+  }
+
+  .klik-input + .klik-menu {
+    display: none;
+  }
+
+  .klik-input:checked + .klik-menu {
+    display: block;
+  }
+
+  .klik-menu li {
+    padding: 5px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
+  .klik-menu li:hover {
+    background-color: #fffdf9;
+  }
+
+  .klik-menu li a {
+    display: block;
   }
 }
 
@@ -558,16 +594,16 @@ body {
     border: 0;
   }
 
-    /*----------- sortiment billede  --------  */
+  /*----------- sortiment billede  --------  */
 
-   .isske {
+  .isske {
     background-image: url(statiske-elementer/isske.svg);
     aspect-ratio: 280/160;
     position: relative;
     background-size: 100%;
     background-repeat: no-repeat;
   }
-    .isske-fyldt {
+  .isske-fyldt {
     background-image: url(statiske-elementer/isske-medis.svg);
     aspect-ratio: 280/160;
     position: relative;
@@ -677,28 +713,16 @@ body {
     top: 50%;
     left: 5%;
     width: 200px;
-}
+  }
   .sortiment-container {
     position: sticky;
     top: 10%;
     left: 5%;
     width: 200px;
-}
-.billede {
+  }
+  .billede {
     width: 114px;
     height: 114px;
-}
-
-  .navbar {
-    background-image: url(menu/bg_hovedmenu_taupe.svg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    padding-bottom: var(--spacing-m);
-    border: 0;
-  }
-  /* Style the hamburger menu */
-  .navbar a.icon {
-    display: none;
   }
 
   /* ------------------LYSERØD CARD I WEB til indhold --------------*/
@@ -793,6 +817,82 @@ body {
     color: var(--taupe-800);
     font-family: "Inter", sans-serif;
     font-weight: 400;
+  }
+
+  /* ------------DROP DOWN TIL HOVED NAVIGATION------------- */
+
+  /* Dropdown */
+  .menu_skrift a {
+    color: black;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000000;
+  }
+
+  a:hover {
+    color: #222222;
+  }
+
+  .dropdown_menu {
+    display: inline-block;
+    position: relative;
+  }
+
+  .klik-button {
+    display: inline-block;
+    padding: 10px 30px 10px 20px;
+    background-color: #fffdf9;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
+  .klik-button:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid black;
+  }
+
+  .klik-input {
+    display: none;
+  }
+
+  .klik-menu {
+    position: absolute;
+    top: 100%;
+    margin: 0px 0 0 0;
+    background-color: #fffdf9;
+    list-style-type: none;
+  }
+
+  .klik-input + .klik-menu {
+    display: none;
+  }
+
+  .klik-input:checked + .klik-menu {
+    display: block;
+  }
+
+  .klik-menu li {
+    padding: 5px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
+  .klik-menu li:hover {
+    background-color: #fffdf9;
+  }
+
+  .klik-menu li a {
+    display: block;
   }
 }
 
@@ -908,65 +1008,6 @@ article {
 }
 
 /*----------------------------- MENU ---------------- */
-
-.navbar {
-  overflow: hidden;
-  /* background-color: var(--taupe-800); */
-}
-
-.navbar a {
-  color: var(--creme-100);
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-.dropdown .dropbtn {
-  font-size: 16px;
-  border: none;
-  outline: none;
-  color: var(--creme-100);
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: "inter", sans-serif;
-  margin: 0;
-}
-
-.navbar a:hover,
-.dropdown:hover .dropbtn {
-  background-color: var(--green-500);
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: var(--creme-200);
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  float: none;
-  color: var(--taupe-800);
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: var(--creme-100);
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
 
 /* ------------- CHECKBOX ------------------- */
 /* Customize the label (the container) */
@@ -1339,4 +1380,65 @@ a {
   }
 }
 
+/* _____ */
 
+.navbar_is {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar_is a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown_is {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown_is .dropbtn_is {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar_is a:hover,
+.dropdown_is:hover .dropbtn_is {
+  background-color: red;
+}
+
+.dropdown-content-is {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content-is a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content-is a:hover {
+  background-color: #ddd;
+}
+
+.dropdown_is:hover .dropdown-content-is {
+  display: block;
+}
