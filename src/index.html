@@ -65,12 +65,13 @@
         <div class="right-side">
           <a href="index.html" class="logo md:w-40 lg:w-40"></a>
         </div>
+        <a href="kurv-tom.html"
+          ><img class="w-8" src="menu/kurv_menu.svg" alt="kurv menu"
+        /></a>
         <a href="kontakt.html">Kontakt</a>
         <a href="omismageriet.html">Om ismageriet</a>
         <div class="dropdown">
-          <button class="dropbtn">
-            Vores is ▽   
-          </button>
+          <button class="dropbtn">Vores is ▽</button>
           <div class="dropdown-content">
             <a href="bestilis.html">Bestil is</a>
             <a href="indhold.html">Is indhold</a>
@@ -103,7 +104,7 @@
               src="statiske-elementer/forside_ikoner.svg"
               alt="infoboks om ismageriet"
             />
-            <div class="pt-6 lg:pt-10 flex justify-center">
+            <div class="flex justify-center pt-6 lg:pt-10">
               <a href="bestilis-kategori.html"
                 ><button class="primary_pink">Bestil is</button></a
               >
@@ -111,15 +112,18 @@
           </div>
           <div>
             <div class="element_spacing flex justify-center">
-              <div class="hover:animate-spin w-1/2">
-                <a href="sortiment.html#season"><img src="statiske-elementer/nyhed.svg" alt="nyhed is" /></a>
+              <div class="w-1/2 hover:animate-spin">
+                <a href="sortiment.html#season"
+                  ><img src="statiske-elementer/nyhed.svg" alt="nyhed is"
+                /></a>
               </div>
             </div>
             <div class="sm:element_spacing flex justify-center">
               <div class="">
-                <a href="sortiment.html#smag"><img
-                  src="statiske-elementer/forside_ugens_favoritter.svg"
-                  alt="ugens favoritter is"
+                <a href="sortiment.html#smag"
+                  ><img
+                    src="statiske-elementer/forside_ugens_favoritter.svg"
+                    alt="ugens favoritter is"
                 /></a>
               </div>
             </div>
@@ -203,7 +207,7 @@
         </div>
         <br />
         <!-- The dots/circles -->
-        <div class="flex justify-center"  style="text-align: center">
+        <div class="flex justify-center" style="text-align: center">
           <span class="dot" onclick="currentSlide(1)"></span>
           <span class="dot" onclick="currentSlide(2)"></span>
           <span class="dot" onclick="currentSlide(3)"></span>
@@ -330,14 +334,14 @@
         dots[slideIndex - 1].className += " active";
       }
 
-          function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
       }
-    }
     </script>
   </body>
 </html>

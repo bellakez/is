@@ -7,6 +7,37 @@
     <link rel="stylesheet" href="style.css" />
     <title>Vælg din is</title>
   </head>
+  <header>
+    <div class="topnav menu-baggrund" id="myTopnav">
+      <div class="right-side">
+        <a href="index.html" class="logo md:w-40 lg:w-40"></a>
+      </div>
+      <a href="kurv-tom.html"
+        ><img class="w-8" src="menu/kurv_menu.svg" alt="kurv menu"
+      /></a>
+      <a href="kontakt.html">Kontakt</a>
+      <a href="omismageriet.html">Om ismageriet</a>
+      <div class="dropdown">
+        <button class="dropbtn">
+          Vores is ▽
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="bestilis.html">Bestil is</a>
+          <a href="indhold.html">Is indhold</a>
+          <a href="sortiment.html">Sortiment</a>
+          <a href="gavekort.html">Gavekort</a>
+        </div>
+      </div>
+      <a
+        href="javascript:void(0);"
+        style="font-size: 15px"
+        class="icon"
+        onclick="myFunction()"
+        >&#9776;</a
+      >
+    </div>
+  </header>
   <body>
     <main>
       <!-- ------------------ SECTION1 ---------------- -->
@@ -84,7 +115,9 @@
       <!-- DIN ISBOKS ILLUSTRATION starter -->
       <section class="isboks-section">
         <div class="isboks-container">
-          <img src="menu/din_isboks_oversigt.svg" alt="din literboks" />
+          <a href="bestilis-oversigt.html">
+            <img src="menu/din_isboks_oversigt.svg" alt="din literboks"
+          /></a>
         </div>
       </section>
       <!-- DIN ISBOKS ILLUSTRATION slut -->

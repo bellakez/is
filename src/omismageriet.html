@@ -17,17 +17,18 @@
     <title>Om Ismageriet</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-   <header>
+  <header>
     <div class="topnav menu-baggrund" id="myTopnav">
       <div class="right-side">
         <a href="index.html" class="logo md:w-40 lg:w-40"></a>
       </div>
+      <a href="kurv-tom.html"
+        ><img class="w-8" src="menu/kurv_menu.svg" alt="kurv menu"
+      /></a>
       <a href="kontakt.html">Kontakt</a>
       <a href="omismageriet.html">Om ismageriet</a>
       <div class="dropdown">
-        <button class="dropbtn">
-          Vores is ▽
-        </button>
+        <button class="dropbtn">Vores is ▽</button>
         <div class="dropdown-content">
           <a href="bestilis.html">Bestil is</a>
           <a href="indhold.html">Is indhold</a>
@@ -334,15 +335,15 @@
       </div>
     </footer>
     <script type="module" src="./main.js"></script>
-      <script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
       }
-    }
-  </script>
+    </script>
   </body>
 </html>

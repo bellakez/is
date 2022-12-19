@@ -7,11 +7,14 @@
     <link rel="stylesheet" href="style.css" />
     <title>Kategori</title>
   </head>
-    <header>
+  <header>
     <div class="topnav menu-baggrund" id="myTopnav">
       <div class="right-side">
         <a href="index.html" class="logo md:w-40 lg:w-40"></a>
       </div>
+      <a href="kurv-tom.html"
+        ><img class="w-8" src="menu/kurv_menu.svg" alt="kurv menu"
+      /></a>
       <a href="kontakt.html">Kontakt</a>
       <a href="omismageriet.html">Om ismageriet</a>
       <div class="dropdown">
@@ -44,13 +47,14 @@
           <a class="underline underline-offset-2" href="bestilis-literboks.html"
             >... > Literboks >
           </a>
-          <a class="underline underline-offset-2" href="bestilis-dinliterboks.html">
-             Din literboks</a
+          <a
+            class="underline underline-offset-2"
+            href="bestilis-dinliterboks.html"
+          >
+            Din literboks</a
           >
         </div>
-        <div
-          class="lg:spacing_til_h1 lg:flex lg:justify-center"
-        >
+        <div class="lg:spacing_til_h1 lg:flex lg:justify-center">
           <div class="justify-center lg:w-1/2">
             <h2>4 slags is - 1 liter</h2>
             <br />
@@ -72,12 +76,14 @@
       </section>
       <section class="flex justify-center">
         <div class="flex justify-center p-2 pt-5 lg:pt-10">
-            <a href="kurv-fyldt.html">
-          <button class="primary_green">Læg i kurv</button></a>
+          <a href="kurv-fyldt.html">
+            <button class="primary_green">Læg i kurv</button></a
+          >
         </div>
         <div class="flex justify-center p-2 pt-5 lg:pt-10">
-            <a href="bestilis.html">
-          <button class="secondary_green">Shop videre</button></a>
+          <a href="bestilis.html">
+            <button class="secondary_green">Shop videre</button></a
+          >
         </div>
       </section>
     </main>
@@ -144,17 +150,16 @@
         </div>
       </div>
     </footer>
-      <script type="module" src="./main.js"></script>
+    <script type="module" src="./main.js"></script>
     <script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
       }
-    }
-  </script>
+    </script>
   </body>
-
 </html>

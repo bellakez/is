@@ -7,11 +7,14 @@
     <link rel="stylesheet" href="style.css" />
     <title>Indhold i is</title>
   </head>
-    <header>
+  <header>
     <div class="topnav menu-baggrund" id="myTopnav">
       <div class="right-side">
         <a href="index.html" class="logo md:w-40 lg:w-40"></a>
       </div>
+      <a href="kurv-tom.html"
+        ><img class="w-8" src="menu/kurv_menu.svg" alt="kurv menu"
+      /></a>
       <a href="kontakt.html">Kontakt</a>
       <a href="omismageriet.html">Om ismageriet</a>
       <div class="dropdown">
@@ -239,7 +242,7 @@
         </section>
         <section class="element_spacing lg:w-1/2">
           <div>
-            <img src="../fotos/cocoa_bean_shell.jpg" alt="Kakao billed" />
+            <img src="../fotos/cocoa_bean_shell.webp" alt="Kakao billed" />
           </div>
         </section>
       </section>
@@ -290,13 +293,12 @@
           </section>
           <section class="lg:w-1/2">
             <div>
-              <img src="../fotos/cocoa_farmer.jpg" alt="Kokoa medarbejder" />
+              <img src="../fotos/cocoa_farmer.webp" alt="Kokoa medarbejder" />
             </div>
           </section>
         </section>
       </section>
     </main>
-
 
     <footer class="flex justify-center">
       <div class="md:footerbaggrund_ipad footerbaggrund">
@@ -361,15 +363,15 @@
       </div>
     </footer>
     <script type="module" src="./main.js"></script>
-      <script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
       }
-    }
-  </script>
+    </script>
   </body>
 </html>
