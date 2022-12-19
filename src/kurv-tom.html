@@ -7,7 +7,34 @@
     <link rel="stylesheet" href="style.css" />
     <title>Kategori</title>
   </head>
-  <header></header>
+  <header>
+    <div class="topnav menu-baggrund" id="myTopnav">
+      <div class="right-side">
+        <a href="index.html" class="logo md:w-40 lg:w-40"></a>
+      </div>
+      <a href="kontakt.html">Kontakt</a>
+      <a href="omismageriet.html">Om ismageriet</a>
+      <div class="dropdown">
+        <button class="dropbtn">
+          Vores is ▽
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="bestilis.html">Bestil is</a>
+          <a href="indhold.html">Is indhold</a>
+          <a href="sortiment.html">Sortiment 2</a>
+          <a href="gavekort.html">Gavekort</a>
+        </div>
+      </div>
+      <a
+        href="javascript:void(0);"
+        style="font-size: 15px"
+        class="icon"
+        onclick="myFunction()"
+        >&#9776;</a
+      >
+    </div>
+  </header>
   <body class="">
     <main>
       <!-- ------------------ SECTION1 ---------------- -->
@@ -28,4 +55,14 @@
     </main>
   </body>
   <script type="module" src="./main.js"></script>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
 </html>

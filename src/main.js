@@ -44,3 +44,4 @@ document.querySelectorAll(".parallaxcontainer").forEach((parallaxcontainer) => {
     target: elementderskalparallaxes,
   });
 });
+
