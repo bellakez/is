@@ -208,14 +208,14 @@ body {
 
   /*----------- sortiment billede  --------  */
 
-  .isske {
+  #isske {
     background-image: url(statiske-elementer/isske.svg);
     aspect-ratio: 280/160;
     position: relative;
     background-size: 100%;
     background-repeat: no-repeat;
   }
-  .isske-fyldt {
+  #isske:hover {
     background-image: url(statiske-elementer/isske-medis.svg);
     aspect-ratio: 280/160;
     position: relative;
@@ -547,14 +547,14 @@ body {
 
   /*----------- sortiment billede  --------  */
 
-  .isske {
+  #isske {
     background-image: url(statiske-elementer/isske.svg);
     aspect-ratio: 280/160;
     position: relative;
     background-size: 100%;
     background-repeat: no-repeat;
   }
-  .isske-fyldt {
+  #isske:hover {
     background-image: url(statiske-elementer/isske-medis.svg);
     aspect-ratio: 280/160;
     position: relative;
@@ -668,7 +668,7 @@ body {
   .sortiment-container {
     position: sticky;
     top: 10%;
-    left: 2%;
+    left: 1%;
     width: 200px;
   }
   .billede {
@@ -1172,7 +1172,7 @@ hr {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: var(--creme-100);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -1189,13 +1189,12 @@ hr {
 
 .topnav a:hover,
 .dropdown:hover .dropbtn {
-  background-color: #555;
-  color: white;
+  color: var(--green-700);
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: var(--creme-200);
+  color: var(--taupe-800);
 }
 
 .dropdown:hover .dropdown-content {
