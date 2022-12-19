@@ -2022,3 +2022,2166 @@ hr {
 .open-input-kirse:checked + .open-contents-kirse > .open-label-kirse:after {
   display: block;
 }
+
+/* ----- INFO BOKS TIL IS OVERSIGTEN -> skildpadde ----- */
+
+.open-wrap-padde {
+  display: block;
+}
+
+@media only screen and (min-width: 767px) {
+  .open-wrap-padde {
+    margin: 0 0 32px;
+  }
+}
+
+.open-input-padde {
+  display: none;
+}
+
+.open-label-padde {
+  position: relative;
+  display: block;
+  padding: 8px 8px 8px 28px;
+  line-height: 24px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 40px;
+}
+
+.open-label-padde:before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 12px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: solid 1px var(--pink-700);
+  border-radius: 5px;
+}
+
+.open-label-padde:after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 8px;
+  display: none;
+  width: 7px;
+  height: 14px;
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+  border-bottom: 3px solid var(--pink-700);
+  border-right: 3px solid var(--pink-700);
+}
+
+@media only screen and (min-width: 767px) {
+  .open-label-padde {
+    padding: 8px 8px 8px 32px;
+  }
+  .open-label-padde:before {
+    left: 8px;
+  }
+  .open-label-padde:after {
+    left: 13px;
+  }
+}
+
+.open-contents-padde {
+  float: left;
+  padding-right: 20px;
+}
+
+.open-contents__inner-padde {
+  display: none;
+}
+
+.open-input-padde:checked + .open-contents-padde > .open-contents__inner-padde {
+  display: block;
+  width: 250px;
+  position: absolute;
+  background-color: var(--creme-200);
+  padding: 5px;
+}
+
+@media only screen and (min-width: 767px) {
+  .open-input-padde:checked
+    + .open-contents-padde
+    > .open-contents__inner-padde {
+    padding: 4px 0 0 0;
+  }
+}
+
+.open-input-padde:checked + .open-contents-padde > .open-label-padde:after {
+  display: block;
+}
+
+/* ----- INFO BOKS TIL IS OVERSIGTEN -> stracciatella ----- */
+
+.open-wrap-stra {
+  display: block;
+}
+
+@media only screen and (min-width: 767px) {
+  .open-wrap-stra {
+    margin: 0 0 32px;
+  }
+}
+
+.open-input-stra {
+  display: none;
+}
+
+.open-label-stra {
+  position: relative;
+  display: block;
+  padding: 8px 8px 8px 28px;
+  line-height: 24px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 40px;
+}
+
+.open-label-stra:before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 12px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: solid 1px var(--pink-700);
+  border-radius: 5px;
+}
+
+.open-label-stra:after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 8px;
+  display: none;
+  width: 7px;
+  height: 14px;
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+  border-bottom: 3px solid var(--pink-700);
+  border-right: 3px solid var(--pink-700);
+}
+
+@media only screen and (min-width: 767px) {
+  .open-label-stra {
+    padding: 8px 8px 8px 32px;
+  }
+  .open-label-stra:before {
+    left: 8px;
+  }
+  .open-label-stra:after {
+    left: 13px;
+  }
+}
+
+.open-contents-stra {
+  float: left;
+  padding-right: 20px;
+}
+
+.open-contents__inner-stra {
+  display: none;
+}
+
+.open-input-stra:checked + .open-contents-stra > .open-contents__inner-stra {
+  display: block;
+  width: 250px;
+  position: absolute;
+  background-color: var(--creme-200);
+  padding: 5px;
+}
+
+@media only screen and (min-width: 767px) {
+  .open-input-stra:checked + .open-contents-stra > .open-contents__inner-stra {
+    padding: 4px 0 0 0;
+  }
+}
+
+.open-input-stra:checked + .open-contents-stra > .open-label-stra:after {
+  display: block;
+}
+
+/* ----- INFO BOKS TIL IS OVERSIGTEN -> Mynte & choko ----- */
+
+.open-wrap-mynte {
+  display: block;
+}
+
+@media only screen and (min-width: 767px) {
+  .open-wrap-mynte {
+    margin: 0 0 32px;
+  }
+}
+
+.open-input-mynte {
+  display: none;
+}
+
+.open-label-mynte {
+  position: relative;
+  display: block;
+  padding: 8px 8px 8px 28px;
+  line-height: 24px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 40px;
+}
+
+.open-label-mynte:before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 12px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: solid 1px var(--pink-700);
+  border-radius: 5px;
+}
+
+.open-label-mynte:after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 8px;
+  display: none;
+  width: 7px;
+  height: 14px;
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+  border-bottom: 3px solid var(--pink-700);
+  border-right: 3px solid var(--pink-700);
+}
+
+@media only screen and (min-width: 767px) {
+  .open-label-mynte {
+    padding: 8px 8px 8px 32px;
+  }
+  .open-label-mynte:before {
+    left: 8px;
+  }
+  .open-label-mynte:after {
+    left: 13px;
+  }
+}
+
+.open-contents-mynte {
+  float: left;
+  padding-right: 20px;
+}
+
+.open-contents__inner-mynte {
+  display: none;
+}
+
+.open-input-mynte:checked + .open-contents-mynte > .open-contents__inner-mynte {
+  display: block;
+  width: 250px;
+  position: absolute;
+  background-color: var(--creme-200);
+  padding: 5px;
+}
+
+@media only screen and (min-width: 767px) {
+  .open-input-mynte:checked
+    + .open-contents-mynte
+    > .open-contents__inner-mynte {
+    padding: 4px 0 0 0;
+  }
+}
+
+.open-input-mynte:checked + .open-contents-mynte > .open-label-mynte:after {
+  display: block;
+}
+
+/* ----- INFO BOKS TIL IS OVERSIGTEN -> Peanut & karamel ----- */
+
+.open-wrap-peanut {
+  display: block;
+}
+
+@media only screen and (min-width: 767px) {
+  .open-wrap-peanut {
+    margin: 0 0 32px;
+  }
+}
+
+.open-input-peanut {
+  display: none;
+}
+
+.open-label-peanut {
+  position: relative;
+  display: block;
+  padding: 8px 8px 8px 28px;
+  line-height: 24px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 40px;
+}
+
+.open-label-peanut:before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 12px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: solid 1px var(--pink-700);
+  border-radius: 5px;
+}
+
+.open-label-peanut:after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 8px;
+  display: none;
+  width: 7px;
+  height: 14px;
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+  border-bottom: 3px solid var(--pink-700);
+  border-right: 3px solid var(--pink-700);
+}
+
+@media only screen and (min-width: 767px) {
+  .open-label-peanut {
+    padding: 8px 8px 8px 32px;
+  }
+  .open-label-peanut:before {
+    left: 8px;
+  }
+  .open-label-peanut:after {
+    left: 13px;
+  }
+}
+
+.open-contents-peanut {
+  float: left;
+  padding-right: 20px;
+}
+
+.open-contents__inner-peanut {
+  display: none;
+}
+
+.open-input-peanut:checked
+  + .open-contents-peanut
+  > .open-contents__inner-peanut {
+  display: block;
+  width: 250px;
+  position: absolute;
+  background-color: var(--creme-200);
+  padding: 5px;
+}
+
+@media only screen and (min-width: 767px) {
+  .open-input-peanut:checked
+    + .open-contents-peanut
+    > .open-contents__inner-peanut {
+    padding: 4px 0 0 0;
+  }
+}
+
+.open-input-peanut:checked + .open-contents-peanut > .open-label-peanut:after {
+  display: block;
+}
+
+/* ----- INFO BOKS TIL IS OVERSIGTEN -> Chokolade is----- */
+
+.open-wrap-choco {
+  display: block;
+}
+
+@media only screen and (min-width: 767px) {
+  .open-wrap-choco {
+    margin: 0 0 32px;
+  }
+}
+
+.open-input-choco {
+  display: none;
+}
+
+.open-label-choco {
+  position: relative;
+  display: block;
+  padding: 8px 8px 8px 28px;
+  line-height: 24px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 40px;
+}
+
+.open-label-choco:before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 12px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: solid 1px var(--pink-700);
+  border-radius: 5px;
+}
+
+.open-label-choco:after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 8px;
+  display: none;
+  width: 7px;
+  height: 14px;
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+  border-bottom: 3px solid var(--pink-700);
+  border-right: 3px solid var(--pink-700);
+}
+
+@media only screen and (min-width: 767px) {
+  .open-label-choco {
+    padding: 8px 8px 8px 32px;
+  }
+  .open-label-choco:before {
+    left: 8px;
+  }
+  .open-label-choco:after {
+    left: 13px;
+  }
+}
+
+.open-contents-choco {
+  float: left;
+  padding-right: 20px;
+}
+
+.open-contents__inner-choco {
+  display: none;
+}
+
+.open-input-choco:checked + .open-contents-choco > .open-contents__inner-choco {
+  display: block;
+  width: 250px;
+  position: absolute;
+  background-color: var(--creme-200);
+  padding: 5px;
+}
+
+@media only screen and (min-width: 767px) {
+  .open-input-choco:checked
+    + .open-contents-choco
+    > .open-contents__inner-choco {
+    padding: 4px 0 0 0;
+  }
+}
+
+.open-input-choco:checked + .open-contents-choco > .open-label-choco:after {
+  display: block;
+}
+
+/* ----- INFO BOKS TIL IS OVERSIGTEN -> Hvid chokolade ----- */
+
+.open-wrap-hvid {
+  display: block;
+}
+
+@media only screen and (min-width: 767px) {
+  .open-wrap-hvid {
+    margin: 0 0 32px;
+  }
+}
+
+.open-input-hvid {
+  display: none;
+}
+
+.open-label-hvid {
+  position: relative;
+  display: block;
+  padding: 8px 8px 8px 28px;
+  line-height: 24px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 40px;
+}
+
+.open-label-hvid:before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 12px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: solid 1px var(--pink-700);
+  border-radius: 5px;
+}
+
+.open-label-hvid:after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 8px;
+  display: none;
+  width: 7px;
+  height: 14px;
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+  border-bottom: 3px solid var(--pink-700);
+  border-right: 3px solid var(--pink-700);
+}
+
+@media only screen and (min-width: 767px) {
+  .open-label-hvid {
+    padding: 8px 8px 8px 32px;
+  }
+  .open-label-hvid:before {
+    left: 8px;
+  }
+  .open-label-hvid:after {
+    left: 13px;
+  }
+}
+
+.open-contents-hvid {
+  float: left;
+  padding-right: 20px;
+}
+
+.open-contents__inner-hvid {
+  display: none;
+}
+
+.open-input-hvid:checked + .open-contents-hvid > .open-contents__inner-hvid {
+  display: block;
+  width: 250px;
+  position: absolute;
+  background-color: var(--creme-200);
+  padding: 5px;
+}
+
+@media only screen and (min-width: 767px) {
+  .open-input-hvid:checked + .open-contents-hvid > .open-contents__inner-hvid {
+    padding: 4px 0 0 0;
+  }
+}
+
+.open-input-hvid:checked + .open-contents-hvid > .open-label-hvid:after {
+  display: block;
+}
+
+/* ----- INFO BOKS TIL IS OVERSIGTEN -> Amagerisen ----- */
+
+.open-wrap-amagerisen {
+  display: block;
+}
+
+@media only screen and (min-width: 767px) {
+  .open-wrap-amagerisen {
+    margin: 0 0 32px;
+  }
+}
+
+.open-input-amagerisen {
+  display: none;
+}
+
+.open-label-amagerisen {
+  position: relative;
+  display: block;
+  padding: 8px 8px 8px 28px;
+  line-height: 24px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 40px;
+}
+
+.open-label-amagerisen:before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 12px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: solid 1px var(--pink-700);
+  border-radius: 5px;
+}
+
+.open-label-amagerisen:after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 8px;
+  display: none;
+  width: 7px;
+  height: 14px;
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+  border-bottom: 3px solid var(--pink-700);
+  border-right: 3px solid var(--pink-700);
+}
+
+@media only screen and (min-width: 767px) {
+  .open-label-amagerisen {
+    padding: 8px 8px 8px 32px;
+  }
+  .open-label-amagerisen:before {
+    left: 8px;
+  }
+  .open-label-amagerisen:after {
+    left: 13px;
+  }
+}
+
+.open-contents-amagerisen {
+  float: left;
+  padding-right: 20px;
+}
+
+.open-contents__inner-amagerisen {
+  display: none;
+}
+
+.open-input-amagerisen:checked
+  + .open-contents-amagerisen
+  > .open-contents__inner-amagerisen {
+  display: block;
+  width: 250px;
+  position: absolute;
+  background-color: var(--creme-200);
+  padding: 5px;
+}
+
+@media only screen and (min-width: 767px) {
+  .open-input-amagerisen:checked
+    + .open-contents-amagerisen
+    > .open-contents__inner-amagerisen {
+    padding: 4px 0 0 0;
+  }
+}
+
+.open-input-amagerisen:checked
+  + .open-contents-amagerisen
+  > .open-label-amagerisen:after {
+  display: block;
+}
+
+/* ----- INFO BOKS TIL IS OVERSIGTEN -> Nutella & kiks ----- */
+
+.open-wrap-nutella {
+  display: block;
+}
+
+@media only screen and (min-width: 767px) {
+  .open-wrap-nutella {
+    margin: 0 0 32px;
+  }
+}
+
+.open-input-nutella {
+  display: none;
+}
+
+.open-label-nutella {
+  position: relative;
+  display: block;
+  padding: 8px 8px 8px 28px;
+  line-height: 24px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 40px;
+}
+
+.open-label-nutella:before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 12px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: solid 1px var(--pink-700);
+  border-radius: 5px;
+}
+
+.open-label-nutella:after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 8px;
+  display: none;
+  width: 7px;
+  height: 14px;
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+  border-bottom: 3px solid var(--pink-700);
+  border-right: 3px solid var(--pink-700);
+}
+
+@media only screen and (min-width: 767px) {
+  .open-label-nutella {
+    padding: 8px 8px 8px 32px;
+  }
+  .open-label-nutella:before {
+    left: 8px;
+  }
+  .open-label-nutella:after {
+    left: 13px;
+  }
+}
+
+.open-contents-nutella {
+  float: left;
+  padding-right: 20px;
+}
+
+.open-contents__inner-nutella {
+  display: none;
+}
+
+.open-input-nutella:checked
+  + .open-contents-nutella
+  > .open-contents__inner-nutella {
+  display: block;
+  width: 250px;
+  position: absolute;
+  background-color: var(--creme-200);
+  padding: 5px;
+}
+
+@media only screen and (min-width: 767px) {
+  .open-input-nutella:checked
+    + .open-contents-nutella
+    > .open-contents__inner-nutella {
+    padding: 4px 0 0 0;
+  }
+}
+
+.open-input-nutella:checked
+  + .open-contents-nutella
+  > .open-label-nutella:after {
+  display: block;
+}
+
+/* ----- INFO BOKS TIL IS OVERSIGTEN -> vanilje ----- */
+
+.open-wrap-vanilje {
+  display: block;
+}
+
+@media only screen and (min-width: 767px) {
+  .open-wrap-vanilje {
+    margin: 0 0 32px;
+  }
+}
+
+.open-input-vanilje {
+  display: none;
+}
+
+.open-label-vanilje {
+  position: relative;
+  display: block;
+  padding: 8px 8px 8px 28px;
+  line-height: 24px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 40px;
+}
+
+.open-label-vanilje:before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 12px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: solid 1px var(--pink-700);
+  border-radius: 5px;
+}
+
+.open-label-vanilje:after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 8px;
+  display: none;
+  width: 7px;
+  height: 14px;
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+  border-bottom: 3px solid var(--pink-700);
+  border-right: 3px solid var(--pink-700);
+}
+
+@media only screen and (min-width: 767px) {
+  .open-label-vanilje {
+    padding: 8px 8px 8px 32px;
+  }
+  .open-label-vanilje:before {
+    left: 8px;
+  }
+  .open-label-vanilje:after {
+    left: 13px;
+  }
+}
+
+.open-contents-vanilje {
+  float: left;
+  padding-right: 20px;
+}
+
+.open-contents__inner-vanilje {
+  display: none;
+}
+
+.open-input-vanilje:checked
+  + .open-contents-vanilje
+  > .open-contents__inner-vanilje {
+  display: block;
+  width: 250px;
+  position: absolute;
+  background-color: var(--creme-200);
+  padding: 5px;
+}
+
+@media only screen and (min-width: 767px) {
+  .open-input-vanilje:checked
+    + .open-contents-vanilje
+    > .open-contents__inner-vanilje {
+    padding: 4px 0 0 0;
+  }
+}
+
+.open-input-vanilje:checked
+  + .open-contents-vanilje
+  > .open-label-vanilje:after {
+  display: block;
+}
+
+/* ----- INFO BOKS TIL IS OVERSIGTEN -> pistacie ----- */
+
+.open-wrap-pistacie {
+  display: block;
+}
+
+@media only screen and (min-width: 767px) {
+  .open-wrap-pistacie {
+    margin: 0 0 32px;
+  }
+}
+
+.open-input-pistacie {
+  display: none;
+}
+
+.open-label-pistacie {
+  position: relative;
+  display: block;
+  padding: 8px 8px 8px 28px;
+  line-height: 24px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 40px;
+}
+
+.open-label-pistacie:before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 12px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: solid 1px var(--pink-700);
+  border-radius: 5px;
+}
+
+.open-label-pistacie:after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 8px;
+  display: none;
+  width: 7px;
+  height: 14px;
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+  border-bottom: 3px solid var(--pink-700);
+  border-right: 3px solid var(--pink-700);
+}
+
+@media only screen and (min-width: 767px) {
+  .open-label-pistacie {
+    padding: 8px 8px 8px 32px;
+  }
+  .open-label-pistacie:before {
+    left: 8px;
+  }
+  .open-label-pistacie:after {
+    left: 13px;
+  }
+}
+
+.open-contents-pistacie {
+  float: left;
+  padding-right: 20px;
+}
+
+.open-contents__inner-pistacie {
+  display: none;
+}
+
+.open-input-pistacie:checked
+  + .open-contents-pistacie
+  > .open-contents__inner-pistacie {
+  display: block;
+  width: 250px;
+  position: absolute;
+  background-color: var(--creme-200);
+  padding: 5px;
+}
+
+@media only screen and (min-width: 767px) {
+  .open-input-pistacie:checked
+    + .open-contents-pistacie
+    > .open-contents__inner-pistacie {
+    padding: 4px 0 0 0;
+  }
+}
+
+.open-input-pistacie:checked
+  + .open-contents-pistacie
+  > .open-label-pistacie:after {
+  display: block;
+}
+
+/* ----- INFO BOKS TIL IS OVERSIGTEN -> karamel ----- */
+
+.open-wrap-karamel {
+  display: block;
+}
+
+@media only screen and (min-width: 767px) {
+  .open-wrap-karamel {
+    margin: 0 0 32px;
+  }
+}
+
+.open-input-karamel {
+  display: none;
+}
+
+.open-label-karamel {
+  position: relative;
+  display: block;
+  padding: 8px 8px 8px 28px;
+  line-height: 24px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 40px;
+}
+
+.open-label-karamel:before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 12px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: solid 1px var(--pink-700);
+  border-radius: 5px;
+}
+
+.open-label-karamel:after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 8px;
+  display: none;
+  width: 7px;
+  height: 14px;
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+  border-bottom: 3px solid var(--pink-700);
+  border-right: 3px solid var(--pink-700);
+}
+
+@media only screen and (min-width: 767px) {
+  .open-label-karamel {
+    padding: 8px 8px 8px 32px;
+  }
+  .open-label-karamel:before {
+    left: 8px;
+  }
+  .open-label-karamel:after {
+    left: 13px;
+  }
+}
+
+.open-contents-karamel {
+  float: left;
+  padding-right: 20px;
+}
+
+.open-contents__inner-karamel {
+  display: none;
+}
+
+.open-input-karamel:checked
+  + .open-contents-karamel
+  > .open-contents__inner-karamel {
+  display: block;
+  width: 250px;
+  position: absolute;
+  background-color: var(--creme-200);
+  padding: 5px;
+}
+
+@media only screen and (min-width: 767px) {
+  .open-input-karamel:checked
+    + .open-contents-karamel
+    > .open-contents__inner-karamel {
+    padding: 4px 0 0 0;
+  }
+}
+
+.open-input-karamel:checked
+  + .open-contents-karamel
+  > .open-label-karamel:after {
+  display: block;
+}
+
+/* ----- INFO BOKS TIL IS OVERSIGTEN -> Kokos ----- */
+
+.open-wrap-kokos {
+  display: block;
+}
+
+@media only screen and (min-width: 767px) {
+  .open-wrap-kokos {
+    margin: 0 0 32px;
+  }
+}
+
+.open-input-kokos {
+  display: none;
+}
+
+.open-label-kokos {
+  position: relative;
+  display: block;
+  padding: 8px 8px 8px 28px;
+  line-height: 24px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 40px;
+}
+
+.open-label-kokos:before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 12px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: solid 1px var(--pink-700);
+  border-radius: 5px;
+}
+
+.open-label-kokos:after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 8px;
+  display: none;
+  width: 7px;
+  height: 14px;
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+  border-bottom: 3px solid var(--pink-700);
+  border-right: 3px solid var(--pink-700);
+}
+
+@media only screen and (min-width: 767px) {
+  .open-label-kokos {
+    padding: 8px 8px 8px 32px;
+  }
+  .open-label-kokos:before {
+    left: 8px;
+  }
+  .open-label-kokos:after {
+    left: 13px;
+  }
+}
+
+.open-contents-kokos {
+  float: left;
+  padding-right: 20px;
+}
+
+.open-contents__inner-kokos {
+  display: none;
+}
+
+.open-input-kokos:checked + .open-contents-kokos > .open-contents__inner-kokos {
+  display: block;
+  width: 250px;
+  position: absolute;
+  background-color: var(--creme-200);
+  padding: 5px;
+}
+
+@media only screen and (min-width: 767px) {
+  .open-input-kokos:checked
+    + .open-contents-kokos
+    > .open-contents__inner-kokos {
+    padding: 4px 0 0 0;
+  }
+}
+
+.open-input-kokos:checked + .open-contents-kokos > .open-label-kokos:after {
+  display: block;
+}
+
+/* ----- INFO BOKS TIL IS OVERSIGTEN -> nødde is ----- */
+
+.open-wrap-nod {
+  display: block;
+}
+
+@media only screen and (min-width: 767px) {
+  .open-wrap-nod {
+    margin: 0 0 32px;
+  }
+}
+
+.open-input-nod {
+  display: none;
+}
+
+.open-label-nod {
+  position: relative;
+  display: block;
+  padding: 8px 8px 8px 28px;
+  line-height: 24px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 40px;
+}
+
+.open-label-nod:before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 12px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: solid 1px var(--pink-700);
+  border-radius: 5px;
+}
+
+.open-label-nod:after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 8px;
+  display: none;
+  width: 7px;
+  height: 14px;
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+  border-bottom: 3px solid var(--pink-700);
+  border-right: 3px solid var(--pink-700);
+}
+
+@media only screen and (min-width: 767px) {
+  .open-label-nod {
+    padding: 8px 8px 8px 32px;
+  }
+  .open-label-nod:before {
+    left: 8px;
+  }
+  .open-label-nod:after {
+    left: 13px;
+  }
+}
+
+.open-contents-nod {
+  float: left;
+  padding-right: 20px;
+}
+
+.open-contents__inner-nod {
+  display: none;
+}
+
+.open-input-nod:checked + .open-contents-nod > .open-contents__inner-nod {
+  display: block;
+  width: 250px;
+  position: absolute;
+  background-color: var(--creme-200);
+  padding: 5px;
+}
+
+@media only screen and (min-width: 767px) {
+  .open-input-nod:checked + .open-contents-nod > .open-contents__inner-nod {
+    padding: 4px 0 0 0;
+  }
+}
+
+.open-input-nod:checked + .open-contents-nod > .open-label-nod:after {
+  display: block;
+}
+
+/* ----- INFO BOKS TIL IS OVERSIGTEN -> cornflakes ----- */
+
+.open-wrap-corn {
+  display: block;
+}
+
+@media only screen and (min-width: 767px) {
+  .open-wrap-corn {
+    margin: 0 0 32px;
+  }
+}
+
+.open-input-corn {
+  display: none;
+}
+
+.open-label-corn {
+  position: relative;
+  display: block;
+  padding: 8px 8px 8px 28px;
+  line-height: 24px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 40px;
+}
+
+.open-label-corn:before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 12px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: solid 1px var(--pink-700);
+  border-radius: 5px;
+}
+
+.open-label-corn:after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 8px;
+  display: none;
+  width: 7px;
+  height: 14px;
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+  border-bottom: 3px solid var(--pink-700);
+  border-right: 3px solid var(--pink-700);
+}
+
+@media only screen and (min-width: 767px) {
+  .open-label-corn {
+    padding: 8px 8px 8px 32px;
+  }
+  .open-label-corn:before {
+    left: 8px;
+  }
+  .open-label-corn:after {
+    left: 13px;
+  }
+}
+
+.open-contents-corn {
+  float: left;
+  padding-right: 20px;
+}
+
+.open-contents__inner-corn {
+  display: none;
+}
+
+.open-input-corn:checked + .open-contents-corn > .open-contents__inner-corn {
+  display: block;
+  width: 250px;
+  position: absolute;
+  background-color: var(--creme-200);
+  padding: 5px;
+}
+
+@media only screen and (min-width: 767px) {
+  .open-input-corn:checked + .open-contents-corn > .open-contents__inner-corn {
+    padding: 4px 0 0 0;
+  }
+}
+
+.open-input-corn:checked + .open-contents-corn > .open-label-corn:after {
+  display: block;
+}
+
+/* ----- INFO BOKS TIL IS OVERSIGTEN -> Æble og smør ----- */
+
+.open-wrap-smoer {
+  display: block;
+}
+
+@media only screen and (min-width: 767px) {
+  .open-wrap-smoer {
+    margin: 0 0 32px;
+  }
+}
+
+.open-input-smoer {
+  display: none;
+}
+
+.open-label-smoer {
+  position: relative;
+  display: block;
+  padding: 8px 8px 8px 28px;
+  line-height: 24px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 40px;
+}
+
+.open-label-smoer:before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 12px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: solid 1px var(--pink-700);
+  border-radius: 5px;
+}
+
+.open-label-smoer:after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 8px;
+  display: none;
+  width: 7px;
+  height: 14px;
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+  border-bottom: 3px solid var(--pink-700);
+  border-right: 3px solid var(--pink-700);
+}
+
+@media only screen and (min-width: 767px) {
+  .open-label-smoer {
+    padding: 8px 8px 8px 32px;
+  }
+  .open-label-smoer:before {
+    left: 8px;
+  }
+  .open-label-smoer:after {
+    left: 13px;
+  }
+}
+
+.open-contents-smoer {
+  float: left;
+  padding-right: 20px;
+}
+
+.open-contents__inner-smoer {
+  display: none;
+}
+
+.open-input-smoer:checked + .open-contents-smoer > .open-contents__inner-smoer {
+  display: block;
+  width: 250px;
+  position: absolute;
+  background-color: var(--creme-200);
+  padding: 5px;
+}
+
+@media only screen and (min-width: 767px) {
+  .open-input-smoer:checked
+    + .open-contents-smoer
+    > .open-contents__inner-smoer {
+    padding: 4px 0 0 0;
+  }
+}
+
+.open-input-smoer:checked + .open-contents-smoer > .open-label-smoer:after {
+  display: block;
+}
+
+/* ----- INFO BOKS TIL IS OVERSIGTEN -> Rosin & Rom ----- */
+
+.open-wrap-marcipan {
+  display: block;
+}
+
+@media only screen and (min-width: 767px) {
+  .open-wrap-rom {
+    margin: 0 0 32px;
+  }
+}
+
+.open-input-rom {
+  display: none;
+}
+
+.open-label-rom {
+  position: relative;
+  display: block;
+  padding: 8px 8px 8px 28px;
+  line-height: 24px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 40px;
+}
+
+.open-label-rom:before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 12px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: solid 1px var(--pink-700);
+  border-radius: 5px;
+}
+
+.open-label-rom:after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 8px;
+  display: none;
+  width: 7px;
+  height: 14px;
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+  border-bottom: 3px solid var(--pink-700);
+  border-right: 3px solid var(--pink-700);
+}
+
+@media only screen and (min-width: 767px) {
+  .open-label-rom {
+    padding: 8px 8px 8px 32px;
+  }
+  .open-label-rom:before {
+    left: 8px;
+  }
+  .open-label-rom:after {
+    left: 13px;
+  }
+}
+
+.open-contents-rom {
+  float: left;
+  padding-right: 20px;
+}
+
+.open-contents__inner-rom {
+  display: none;
+}
+
+.open-input-rom:checked + .open-contents-rom > .open-contents__inner-rom {
+  display: block;
+  width: 250px;
+  position: absolute;
+  background-color: var(--creme-200);
+  padding: 5px;
+}
+
+@media only screen and (min-width: 767px) {
+  .open-input-rom:checked + .open-contents-rom > .open-contents__inner-rom {
+    padding: 4px 0 0 0;
+  }
+}
+
+.open-input-rom:checked + .open-contents-rom > .open-label-rom:after {
+  display: block;
+}
+
+/* ----- INFO BOKS TIL IS OVERSIGTEN -> Marcipan & pistacie ----- */
+
+.open-wrap-marcipan {
+  display: block;
+}
+
+@media only screen and (min-width: 767px) {
+  .open-wrap-marcipan {
+    margin: 0 0 32px;
+  }
+}
+
+.open-input-marcipan {
+  display: none;
+}
+
+.open-label-marcipan {
+  position: relative;
+  display: block;
+  padding: 8px 8px 8px 28px;
+  line-height: 24px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 40px;
+}
+
+.open-label-marcipan:before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 12px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: solid 1px var(--pink-700);
+  border-radius: 5px;
+}
+
+.open-label-marcipan:after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 8px;
+  display: none;
+  width: 7px;
+  height: 14px;
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+  border-bottom: 3px solid var(--pink-700);
+  border-right: 3px solid var(--pink-700);
+}
+
+@media only screen and (min-width: 767px) {
+  .open-label-marcipan {
+    padding: 8px 8px 8px 32px;
+  }
+  .open-label-marcipan:before {
+    left: 8px;
+  }
+  .open-label-marcipan:after {
+    left: 13px;
+  }
+}
+
+.open-contents-marcipan {
+  float: left;
+  padding-right: 20px;
+}
+
+.open-contents__inner-marcipan {
+  display: none;
+}
+
+.open-input-marcipan:checked
+  + .open-contents-marcipan
+  > .open-contents__inner-marcipan {
+  display: block;
+  width: 250px;
+  position: absolute;
+  background-color: var(--creme-200);
+  padding: 5px;
+}
+
+@media only screen and (min-width: 767px) {
+  .open-input-marcipan:checked
+    + .open-contents-marcipan
+    > .open-contents__inner-marcipan {
+    padding: 4px 0 0 0;
+  }
+}
+
+.open-input-marcipan:checked
+  + .open-contents-marcipan
+  > .open-label-marcipan:after {
+  display: block;
+}
+
+/* ----- INFO BOKS TIL IS OVERSIGTEN -> blåbær yoghurt ----- */
+
+.open-wrap-blaa {
+  display: block;
+}
+
+@media only screen and (min-width: 767px) {
+  .open-wrap-blaa {
+    margin: 0 0 32px;
+  }
+}
+
+.open-input-blaa {
+  display: none;
+}
+
+.open-label-blaa {
+  position: relative;
+  display: block;
+  padding: 8px 8px 8px 28px;
+  line-height: 24px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 40px;
+}
+
+.open-label-blaa:before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 12px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: solid 1px var(--pink-700);
+  border-radius: 5px;
+}
+
+.open-label-blaa:after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 8px;
+  display: none;
+  width: 7px;
+  height: 14px;
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+  border-bottom: 3px solid var(--pink-700);
+  border-right: 3px solid var(--pink-700);
+}
+
+@media only screen and (min-width: 767px) {
+  .open-label-blaa {
+    padding: 8px 8px 8px 32px;
+  }
+  .open-label-blaa:before {
+    left: 8px;
+  }
+  .open-label-blaa:after {
+    left: 13px;
+  }
+}
+
+.open-contents-blaa {
+  float: left;
+  padding-right: 20px;
+}
+
+.open-contents__inner-blaa {
+  display: none;
+}
+
+.open-input-blaa:checked + .open-contents-blaa > .open-contents__inner-blaa {
+  display: block;
+  width: 250px;
+  position: absolute;
+  background-color: var(--creme-200);
+  padding: 5px;
+}
+
+@media only screen and (min-width: 767px) {
+  .open-input-blaa:checked + .open-contents-blaa > .open-contents__inner-blaa {
+    padding: 4px 0 0 0;
+  }
+}
+
+.open-input-blaa:checked + .open-contents-blaa > .open-label-blaa:after {
+  display: block;
+}
+
+/* ----- INFO BOKS TIL IS OVERSIGTEN -> Lakrids is ----- */
+
+.open-wrap-lakrids {
+  display: block;
+}
+
+@media only screen and (min-width: 767px) {
+  .open-wrap-lakrids {
+    margin: 0 0 32px;
+  }
+}
+
+.open-input-lakrids {
+  display: none;
+}
+
+.open-label-lakrids {
+  position: relative;
+  display: block;
+  padding: 8px 8px 8px 28px;
+  line-height: 24px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 40px;
+}
+
+.open-label-lakrids:before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 12px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: solid 1px var(--pink-700);
+  border-radius: 5px;
+}
+
+.open-label-lakrids:after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 8px;
+  display: none;
+  width: 7px;
+  height: 14px;
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+  border-bottom: 3px solid var(--pink-700);
+  border-right: 3px solid var(--pink-700);
+}
+
+@media only screen and (min-width: 767px) {
+  .open-label-lakrids {
+    padding: 8px 8px 8px 32px;
+  }
+  .open-label-lakrids:before {
+    left: 8px;
+  }
+  .open-label-lakrids:after {
+    left: 13px;
+  }
+}
+
+.open-contents-lakrids {
+  float: left;
+  padding-right: 20px;
+}
+
+.open-contents__inner-lakrids {
+  display: none;
+}
+
+.open-input-lakrids:checked
+  + .open-contents-lakrids
+  > .open-contents__inner-lakrids {
+  display: block;
+  width: 250px;
+  position: absolute;
+  background-color: var(--creme-200);
+  padding: 5px;
+}
+
+@media only screen and (min-width: 767px) {
+  .open-input-lakrids:checked
+    + .open-contents-lakrids
+    > .open-contents__inner-lakrids {
+    padding: 4px 0 0 0;
+  }
+}
+
+.open-input-lakrids:checked
+  + .open-contents-lakrids
+  > .open-label-lakrids:after {
+  display: block;
+}
+
+/* ----- INFO BOKS TIL IS OVERSIGTEN -> Hindbærsnitte is ----- */
+
+.open-wrap-hind {
+  display: block;
+}
+
+@media only screen and (min-width: 767px) {
+  .open-wrap-hind {
+    margin: 0 0 32px;
+  }
+}
+
+.open-input-hind {
+  display: none;
+}
+
+.open-label-hind {
+  position: relative;
+  display: block;
+  padding: 8px 8px 8px 28px;
+  line-height: 24px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 40px;
+}
+
+.open-label-hind:before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 12px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: solid 1px var(--pink-700);
+  border-radius: 5px;
+}
+
+.open-label-hind:after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 8px;
+  display: none;
+  width: 7px;
+  height: 14px;
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+  border-bottom: 3px solid var(--pink-700);
+  border-right: 3px solid var(--pink-700);
+}
+
+@media only screen and (min-width: 767px) {
+  .open-label-hind {
+    padding: 8px 8px 8px 32px;
+  }
+  .open-label-hind:before {
+    left: 8px;
+  }
+  .open-label-hind:after {
+    left: 13px;
+  }
+}
+
+.open-contents-hind {
+  float: left;
+  padding-right: 20px;
+}
+
+.open-contents__inner-hind {
+  display: none;
+}
+
+.open-input-hind:checked + .open-contents-hind > .open-contents__inner-hind {
+  display: block;
+  width: 250px;
+  position: absolute;
+  background-color: var(--creme-200);
+  padding: 5px;
+}
+
+@media only screen and (min-width: 767px) {
+  .open-input-hind:checked + .open-contents-hind > .open-contents__inner-hind {
+    padding: 4px 0 0 0;
+  }
+}
+
+.open-input-hind:checked + .open-contents-hind > .open-label-hind:after {
+  display: block;
+}
+
+/* ----- INFO BOKS TIL IS OVERSIGTEN -> Tropical is ----- */
+
+.open-wrap-tropical {
+  display: block;
+}
+
+@media only screen and (min-width: 767px) {
+  .open-wrap-tropical {
+    margin: 0 0 32px;
+  }
+}
+
+.open-input-tropical {
+  display: none;
+}
+
+.open-label-tropical {
+  position: relative;
+  display: block;
+  padding: 8px 8px 8px 28px;
+  line-height: 24px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 40px;
+}
+
+.open-label-tropical:before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 12px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: solid 1px var(--pink-700);
+  border-radius: 5px;
+}
+
+.open-label-tropical:after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 8px;
+  display: none;
+  width: 7px;
+  height: 14px;
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+  border-bottom: 3px solid var(--pink-700);
+  border-right: 3px solid var(--pink-700);
+}
+
+@media only screen and (min-width: 767px) {
+  .open-label-tropical {
+    padding: 8px 8px 8px 32px;
+  }
+  .open-label-tropical:before {
+    left: 8px;
+  }
+  .open-label-tropical:after {
+    left: 13px;
+  }
+}
+
+.open-contents-tropical {
+  float: left;
+  padding-right: 20px;
+}
+
+.open-contents__inner-tropical {
+  display: none;
+}
+
+.open-input-tropical:checked
+  + .open-contents-tropical
+  > .open-contents__inner-tropical {
+  display: block;
+  width: 250px;
+  position: absolute;
+  background-color: var(--creme-200);
+  padding: 5px;
+}
+
+@media only screen and (min-width: 767px) {
+  .open-input-tropical:checked
+    + .open-contents-tropical
+    > .open-contents__inner-tropical {
+    padding: 4px 0 0 0;
+  }
+}
+
+.open-input-tropical:checked
+  + .open-contents-tropical
+  > .open-label-tropical:after {
+  display: block;
+}
+
+/* ----- INFO BOKS TIL IS OVERSIGTEN -> Kaffe is ----- */
+
+.open-wrap-kaffe {
+  display: block;
+}
+
+@media only screen and (min-width: 767px) {
+  .open-wrap-kaffe {
+    margin: 0 0 32px;
+  }
+}
+
+.open-input-kaffe {
+  display: none;
+}
+
+.open-label-kaffe {
+  position: relative;
+  display: block;
+  padding: 8px 8px 8px 28px;
+  line-height: 24px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 40px;
+}
+
+.open-label-kaffe:before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 12px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: solid 1px var(--pink-700);
+  border-radius: 5px;
+}
+
+.open-label-kaffe:after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 8px;
+  display: none;
+  width: 7px;
+  height: 14px;
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+  border-bottom: 3px solid var(--pink-700);
+  border-right: 3px solid var(--pink-700);
+}
+
+@media only screen and (min-width: 767px) {
+  .open-label-kaffe {
+    padding: 8px 8px 8px 32px;
+  }
+  .open-label-kaffe:before {
+    left: 8px;
+  }
+  .open-label-kaffe:after {
+    left: 13px;
+  }
+}
+
+.open-contents-kaffe {
+  float: left;
+  padding-right: 20px;
+}
+
+.open-contents__inner-kaffe {
+  display: none;
+}
+
+.open-input-kaffe:checked + .open-contents-kaffe > .open-contents__inner-kaffe {
+  display: block;
+  width: 250px;
+  position: absolute;
+  background-color: var(--creme-200);
+  padding: 5px;
+}
+
+@media only screen and (min-width: 767px) {
+  .open-input-kaffe:checked
+    + .open-contents-kaffe
+    > .open-contents__inner-kaffe {
+    padding: 4px 0 0 0;
+  }
+}
+
+.open-input-kaffe:checked + .open-contents-kaffe > .open-label-kaffe:after {
+  display: block;
+}
+
+/* ----- INFO BOKS TIL IS OVERSIGTEN -> citron-kage ----- */
+
+.open-wrap-citron-kage {
+  display: block;
+}
+
+@media only screen and (min-width: 767px) {
+  .open-wrap-citron-kage {
+    margin: 0 0 32px;
+  }
+}
+
+.open-input-citron-kage {
+  display: none;
+}
+
+.open-label-citron-kage {
+  position: relative;
+  display: block;
+  padding: 8px 8px 8px 28px;
+  line-height: 24px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 40px;
+}
+
+.open-label-citron-kage:before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 12px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: solid 1px var(--pink-700);
+  border-radius: 5px;
+}
+
+.open-label-citron-kage:after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 8px;
+  display: none;
+  width: 7px;
+  height: 14px;
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+  border-bottom: 3px solid var(--pink-700);
+  border-right: 3px solid var(--pink-700);
+}
+
+@media only screen and (min-width: 767px) {
+  .open-label-citron-kage {
+    padding: 8px 8px 8px 32px;
+  }
+  .open-label-citron-kage:before {
+    left: 8px;
+  }
+  .open-label-citron-kage:after {
+    left: 13px;
+  }
+}
+
+.open-contents-citron-kage {
+  float: left;
+  padding-right: 20px;
+}
+
+.open-contents__inner-citron-kage {
+  display: none;
+}
+
+.open-input-citron-kage:checked
+  + .open-contents-citron-kage
+  > .open-contents__inner-citron-kage {
+  display: block;
+  width: 250px;
+  position: absolute;
+  background-color: var(--creme-200);
+  padding: 5px;
+}
+
+@media only screen and (min-width: 767px) {
+  .open-input-citron-kage:checked
+    + .open-contents-citron-kage
+    > .open-contents__inner-citron-kage {
+    padding: 4px 0 0 0;
+  }
+}
+
+.open-input-citron-kage:checked
+  + .open-contents-citron-kage
+  > .open-label-citron-kage:after {
+  display: block;
+}
