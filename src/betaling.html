@@ -7,11 +7,14 @@
     <link rel="stylesheet" href="style.css" />
     <title>Kategori</title>
   </head>
-    <header>
+  <header>
     <div class="topnav menu-baggrund" id="myTopnav">
       <div class="right-side">
         <a href="index.html" class="logo md:w-40 lg:w-40"></a>
       </div>
+      <a href="kurv-tom.html"
+        ><img class="w-8" src="menu/kurv_menu.svg" alt="kurv menu"
+      /></a>
       <a href="kontakt.html">Kontakt</a>
       <a href="omismageriet.html">Om ismageriet</a>
       <div class="dropdown">
@@ -135,9 +138,9 @@
                   </div>
                 </div>
               </div>
-              <label class=""
-                >
-                <input style="border: 2px;" type="checkbox" checked="checked" /> Gem kort
+              <label class="">
+                <input style="border: 2px" type="checkbox" checked="checked" />
+                Gem kort
                 <span class="checkmark"></span>
               </label>
             </div>
@@ -157,7 +160,6 @@
         </div>
       </section>
     </main>
-
 
     <footer class="flex justify-center">
       <div class="md:footerbaggrund_ipad footerbaggrund">
@@ -221,17 +223,16 @@
         </div>
       </div>
     </footer>
-      <script type="module" src="./main.js"></script>
+    <script type="module" src="./main.js"></script>
     <script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
       }
-    }
-  </script>
+    </script>
   </body>
-
 </html>
