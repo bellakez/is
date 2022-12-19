@@ -205,6 +205,22 @@ body {
     background-size: 100%;
     background-repeat: no-repeat;
   }
+  /*----------- sortiment billede  --------  */
+
+   .isske {
+    background-image: url(statiske-elementer/isske.svg);
+    aspect-ratio: 280/160;
+    position: relative;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+    .isske-fyldt {
+    background-image: url(statiske-elementer/isske-medis.svg);
+    aspect-ratio: 280/160;
+    position: relative;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
 
   /*----------- Spacing på main  --------  */
   .main_spacing {
@@ -287,6 +303,22 @@ body {
     box-shadow: 0px 12px 17px 2px rgba(0, 0, 0, 0.09);
     border-radius: 2px;
   }
+  /*----------- SORTIMENT  --------  */
+  /* __________________________________ */
+  .sortiment-boks {
+    width: 102px;
+    height: 180.22px;
+  }
+  .sortiment-nav {
+    position: sticky;
+    left: 5%;
+    width: 100%;
+}
+
+.billede {
+    width: 86px;
+    height: 86px;
+}
   /* --------- BURGER-MENU ---------- */
   .navbar {
     overflow: hidden;
@@ -526,6 +558,23 @@ body {
     border: 0;
   }
 
+    /*----------- sortiment billede  --------  */
+
+   .isske {
+    background-image: url(statiske-elementer/isske.svg);
+    aspect-ratio: 280/160;
+    position: relative;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+    .isske-fyldt {
+    background-image: url(statiske-elementer/isske-medis.svg);
+    aspect-ratio: 280/160;
+    position: relative;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
   /*----------- Spacing af main  --------  */
   .main_spacing {
     margin-left: 236px;
@@ -616,6 +665,30 @@ body {
     box-shadow: 0px 12px 17px 2px rgba(0, 0, 0, 0.09);
     border-radius: 2px;
   }
+
+  /*----------- SORTIMENT  --------  */
+  /* __________________________________ */
+  .sortiment-boks {
+    width: 280px;
+    height: 304.22px;
+  }
+  .sortiment-nav {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    width: 200px;
+}
+  .sortiment-container {
+    position: sticky;
+    top: 10%;
+    left: 5%;
+    width: 200px;
+}
+.billede {
+    width: 114px;
+    height: 114px;
+}
+
   .navbar {
     background-image: url(menu/bg_hovedmenu_taupe.svg);
     background-size: 100%;
@@ -1265,3 +1338,5 @@ a {
     display: none;
   }
 }
+
+
