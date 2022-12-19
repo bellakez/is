@@ -400,6 +400,25 @@ body {
     -webkit-box-shadow: 2px 9px 23px -7px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 2px 9px 23px -7px rgba(0, 0, 0, 0.1);
   }
+
+  /* -------Isboksen til valg af is på dinliterboks side----- */
+  .isboks-container {
+    position: absolute;
+    top: 50%;
+    left: -50%;
+    width: 200px;
+    z-index: 100%;
+    box-shadow: 2px 9px 23px -7px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 2px 9px 23px -7px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 2px 9px 23px -7px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+  }
+  .isboks-section {
+    position: sticky;
+    top: 75%;
+    width: 200px;
+    z-index: 100%;
+  }
 }
 
 /* --------------------------------------    WEB!!!! ---------------------------------------------------------- */
@@ -649,7 +668,7 @@ body {
   .sortiment-container {
     position: sticky;
     top: 10%;
-    left: 5%;
+    left: 2%;
     width: 200px;
   }
   .billede {
@@ -1219,4 +1238,406 @@ hr {
     width: 100%;
     text-align: left;
   }
+}
+
+/* -------Isboksen til valg af is på dinliterboks side----- */
+.isboks-container {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  width: 250px;
+  z-index: 100%;
+  box-shadow: 2px 9px 23px -7px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 2px 9px 23px -7px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 2px 9px 23px -7px rgba(0, 0, 0, 0.3);
+  border-radius: 7px;
+}
+.isboks-section {
+  position: sticky;
+  top: 80%;
+  left: 81%;
+  width: 250px;
+  z-index: 100%;
+}
+
+/* ----- INFO BOKS TIL IS OVERSIGTEN -> juletwist ----- */
+
+.open-wrap {
+  display: block;
+}
+
+@media only screen and (min-width: 767px) {
+  .open-wrap {
+    margin: 0 0 32px;
+  }
+}
+
+.open-input {
+  display: none;
+}
+
+.open-label {
+  position: relative;
+  display: block;
+  padding: 8px 8px 8px 28px;
+  line-height: 24px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 40px;
+}
+
+.open-label:before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 12px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: solid 1px var(--pink-700);
+  border-radius: 5px;
+}
+
+.open-label:after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 8px;
+  display: none;
+  width: 7px;
+  height: 14px;
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+  border-bottom: 3px solid var(--pink-700);
+  border-right: 3px solid var(--pink-700);
+}
+
+@media only screen and (min-width: 767px) {
+  .open-label {
+    padding: 8px 8px 8px 32px;
+  }
+  .open-label:before {
+    left: 8px;
+  }
+  .open-label:after {
+    left: 13px;
+  }
+}
+
+.open-contents {
+  float: left;
+  padding-right: 20px;
+}
+
+.open-contents__inner {
+  display: none;
+}
+
+.open-input:checked + .open-contents > .open-contents__inner {
+  display: block;
+  width: 250px;
+  position: absolute;
+  background-color: var(--creme-200);
+  padding: 5px;
+}
+
+@media only screen and (min-width: 767px) {
+  .open-input:checked + .open-contents > .open-contents__inner {
+    padding: 4px 0 0 0;
+  }
+}
+
+.open-input:checked + .open-contents > .open-label:after {
+  display: block;
+}
+
+/* ----- INFO BOKS TIL IS OVERSIGTEN -> pebernød ----- */
+
+.open-wrap-pebernod {
+  display: block;
+}
+
+@media only screen and (min-width: 767px) {
+  .open-wrap-pebernod {
+    margin: 0 0 32px;
+  }
+}
+
+.open-input-pebernod {
+  display: none;
+}
+
+.open-label-pebernod {
+  position: relative;
+  display: block;
+  padding: 8px 8px 8px 28px;
+  line-height: 24px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 40px;
+}
+
+.open-label-pebernod:before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 12px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: solid 1px var(--pink-700);
+  border-radius: 5px;
+}
+
+.open-label-pebernod:after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 8px;
+  display: none;
+  width: 7px;
+  height: 14px;
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+  border-bottom: 3px solid var(--pink-700);
+  border-right: 3px solid var(--pink-700);
+}
+
+@media only screen and (min-width: 767px) {
+  .open-label-pebernod {
+    padding: 8px 8px 8px 32px;
+  }
+  .open-label-pebernod:before {
+    left: 8px;
+  }
+  .open-label-pebernod:after {
+    left: 13px;
+  }
+}
+
+.open-contents-pebernod {
+  float: left;
+  padding-right: 20px;
+}
+
+.open-contents__inner-pebernod {
+  display: none;
+}
+
+.open-input-pebernod:checked
+  + .open-contents-pebernod
+  > .open-contents__inner-pebernod {
+  display: block;
+  width: 250px;
+  position: absolute;
+  background-color: var(--creme-200);
+  padding: 5px;
+}
+
+@media only screen and (min-width: 767px) {
+  .open-input-pebernod:checked
+    + .open-contents-pebernod
+    > .open-contents__inner-pebernod {
+    padding: 4px 0 0 0;
+  }
+}
+
+.open-input-pebernod:checked
+  + .open-contents-pebernod
+  > .open-label-pebernod:after {
+  display: block;
+}
+
+/* ----- INFO BOKS TIL IS OVERSIGTEN -> isalamande ----- */
+
+.open-wrap-isalamande {
+  display: block;
+}
+
+@media only screen and (min-width: 767px) {
+  .open-wrap-isalamande {
+    margin: 0 0 32px;
+  }
+}
+
+.open-input-isalamande {
+  display: none;
+}
+
+.open-label-isalamande {
+  position: relative;
+  display: block;
+  padding: 8px 8px 8px 28px;
+  line-height: 24px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 40px;
+}
+
+.open-label-isalamande:before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 12px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: solid 1px var(--pink-700);
+  border-radius: 5px;
+}
+
+.open-label-isalamande:after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 8px;
+  display: none;
+  width: 7px;
+  height: 14px;
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+  border-bottom: 3px solid var(--pink-700);
+  border-right: 3px solid var(--pink-700);
+}
+
+@media only screen and (min-width: 767px) {
+  .open-label-isalamande {
+    padding: 8px 8px 8px 32px;
+  }
+  .open-label-isalamande:before {
+    left: 8px;
+  }
+  .open-label-isalamande:after {
+    left: 13px;
+  }
+}
+
+.open-contents-isalamande {
+  float: left;
+  padding-right: 20px;
+}
+
+.open-contents__inner-isalamande {
+  display: none;
+}
+
+.open-input-isalamande:checked
+  + .open-contents-isalamande
+  > .open-contents__inner-isalamande {
+  display: block;
+  width: 250px;
+  position: absolute;
+  background-color: var(--creme-200);
+  padding: 5px;
+}
+
+@media only screen and (min-width: 767px) {
+  .open-input-isalamande:checked
+    + .open-contents-isalamande
+    > .open-contents__inner-isalamanded {
+    padding: 4px 0 0 0;
+  }
+}
+
+.open-input-isalamande:checked
+  + .open-contents-isalamande
+  > .open-label-isalamande:after {
+  display: block;
+}
+
+/* ----- INFO BOKS TIL IS OVERSIGTEN -> jordbær ----- */
+
+.open-wrap-jordbaer {
+  display: block;
+}
+
+@media only screen and (min-width: 767px) {
+  .open-wrap-jordbaer {
+    margin: 0 0 32px;
+  }
+}
+
+.open-input-jordbaer {
+  display: none;
+}
+
+.open-label-jordbaer {
+  position: relative;
+  display: block;
+  padding: 8px 8px 8px 28px;
+  line-height: 24px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 40px;
+}
+
+.open-label-jordbaer:before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 12px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: solid 1px var(--pink-700);
+  border-radius: 5px;
+}
+
+.open-label-jordbaer:after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 8px;
+  display: none;
+  width: 7px;
+  height: 14px;
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+  border-bottom: 3px solid var(--pink-700);
+  border-right: 3px solid var(--pink-700);
+}
+
+@media only screen and (min-width: 767px) {
+  .open-label-jordbaer {
+    padding: 8px 8px 8px 32px;
+  }
+  .open-label-jordbaer:before {
+    left: 8px;
+  }
+  .open-label-jordbaer:after {
+    left: 13px;
+  }
+}
+
+.open-contents-jordbaer {
+  float: left;
+  padding-right: 20px;
+}
+
+.open-contents__inner-jordbaer {
+  display: none;
+}
+
+.open-input-jordbaer:checked
+  + .open-contents-jordbaer
+  > .open-contents__inner-jordbaer {
+  display: block;
+  width: 250px;
+  position: absolute;
+  background-color: var(--creme-200);
+  padding: 5px;
+}
+
+@media only screen and (min-width: 767px) {
+  .open-input-jordbaer:checked
+    + .open-contents-jordbaer
+    > .open-contents__inner-jordbaer {
+    padding: 4px 0 0 0;
+  }
+}
+
+.open-input-jordbaer:checked
+  + .open-contents--jordbaer
+  > .open-label-jordbaer:after {
+  display: block;
 }
