@@ -392,82 +392,6 @@ body {
     font-family: "Inter", sans-serif;
     font-weight: 400;
   }
-
-  /* ------------DROP DOWN TIL HOVED NAVIGATION------------- */
-
-  /* Dropdown */
-  .menu_skrift a {
-    color: black;
-  }
-
-  a {
-    text-decoration: none;
-    color: #000000;
-  }
-
-  a:hover {
-    color: #222222;
-  }
-
-  .dropdown_menu {
-    display: inline-block;
-    position: relative;
-  }
-
-  .klik-button {
-    display: inline-block;
-    padding: 10px 30px 10px 20px;
-    background-color: #fffdf9;
-    cursor: pointer;
-    white-space: nowrap;
-  }
-
-  .klik-button:after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: 15px;
-    transform: translateY(-50%);
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 5px solid black;
-  }
-
-  .klik-input {
-    display: none;
-  }
-
-  .klik-menu {
-    position: absolute;
-    top: 100%;
-    margin: 0px 0 0 0;
-    background-color: #fffdf9;
-    list-style-type: none;
-  }
-
-  .klik-input + .klik-menu {
-    display: none;
-  }
-
-  .klik-input:checked + .klik-menu {
-    display: block;
-  }
-
-  .klik-menu li {
-    padding: 5px;
-    cursor: pointer;
-    white-space: nowrap;
-  }
-
-  .klik-menu li:hover {
-    background-color: #fffdf9;
-  }
-
-  .klik-menu li a {
-    display: block;
-  }
 }
 
 /* ------------------------ WEB!!!! -------------------- */
@@ -818,82 +742,6 @@ body {
     font-family: "Inter", sans-serif;
     font-weight: 400;
   }
-
-  /* ------------DROP DOWN TIL HOVED NAVIGATION------------- */
-
-  /* Dropdown */
-  .menu_skrift a {
-    color: black;
-  }
-
-  a {
-    text-decoration: none;
-    color: #000000;
-  }
-
-  a:hover {
-    color: #222222;
-  }
-
-  .dropdown_menu {
-    display: inline-block;
-    position: relative;
-  }
-
-  .klik-button {
-    display: inline-block;
-    padding: 10px 30px 10px 20px;
-    background-color: #fffdf9;
-    cursor: pointer;
-    white-space: nowrap;
-  }
-
-  .klik-button:after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: 15px;
-    transform: translateY(-50%);
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 5px solid black;
-  }
-
-  .klik-input {
-    display: none;
-  }
-
-  .klik-menu {
-    position: absolute;
-    top: 100%;
-    margin: 0px 0 0 0;
-    background-color: #fffdf9;
-    list-style-type: none;
-  }
-
-  .klik-input + .klik-menu {
-    display: none;
-  }
-
-  .klik-input:checked + .klik-menu {
-    display: block;
-  }
-
-  .klik-menu li {
-    padding: 5px;
-    cursor: pointer;
-    white-space: nowrap;
-  }
-
-  .klik-menu li:hover {
-    background-color: #fffdf9;
-  }
-
-  .klik-menu li a {
-    display: block;
-  }
 }
 
 article {
@@ -1007,8 +855,6 @@ article {
   }
 }
 
-/*----------------------------- MENU ---------------- */
-
 /* ------------- CHECKBOX ------------------- */
 /* Customize the label (the container) */
 .container {
@@ -1115,7 +961,7 @@ hr {
   font-size: 1rem;
 }
 
-/* Dropdown til Amager*/
+/* ------Dropdown til Amager START------*/
 
 .dropdown_kontakt {
   display: inline-block;
@@ -1178,8 +1024,9 @@ hr {
   display: flex;
   justify-content: center;
 }
+/* ------Dropdown til Amager SLUT------*/
 
-/* Dropdown knap til Søborg */
+/* ------Dropdown knap til Søborg START------ */
 
 .dropdown_soeborg {
   display: inline-block;
@@ -1244,201 +1091,4 @@ hr {
   justify-content: center;
 }
 
-/* ----------------------MENU MENU MENU------------------ */
-a {
-  color: #000;
-}
-
-/* header */
-
-.header_try {
-  background-color: #fff;
-  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
-  position: fixed;
-  width: 100%;
-  z-index: 3;
-}
-
-.header_try ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  overflow: hidden;
-  background-color: #fff;
-}
-
-.header_try li a {
-  display: block;
-  padding: 20px 20px;
-  border-right: 1px solid #f4f4f4;
-  text-decoration: none;
-}
-
-.header_try li a:hover,
-.header .menu-btn:hover {
-  background-color: #f4f4f4;
-}
-
-.header_try .logo {
-  display: block;
-  float: left;
-  font-size: 2em;
-  padding: 10px 20px;
-  text-decoration: none;
-}
-
-/* menu */
-
-.header_try .menu {
-  clear: both;
-  max-height: 0;
-  transition: max-height 0.2s ease-out;
-}
-
-/* menu icon */
-
-.header_try .menu-icon {
-  cursor: pointer;
-  display: inline-block;
-  float: right;
-  padding: 28px 20px;
-  position: relative;
-  user-select: none;
-}
-
-.header_try .menu-icon .navicon {
-  background: #333;
-  display: block;
-  height: 2px;
-  position: relative;
-  transition: background 0.2s ease-out;
-  width: 18px;
-}
-
-.header_try .menu-icon .navicon:before,
-.header_try .menu-icon .navicon:after {
-  background: #333;
-  content: "";
-  display: block;
-  height: 100%;
-  position: absolute;
-  transition: all 0.2s ease-out;
-  width: 100%;
-}
-
-.header_try .menu-icon .navicon:before {
-  top: 5px;
-}
-
-.header_try .menu-icon .navicon:after {
-  top: -5px;
-}
-
-/* menu btn */
-
-.header_try .menu-btn {
-  display: none;
-}
-
-.header_try .menu-btn:checked ~ .menu {
-  max-height: 240px;
-}
-
-.header_try .menu-btn:checked ~ .menu-icon .navicon {
-  background: transparent;
-}
-
-.header_try .menu-btn:checked ~ .menu-icon .navicon:before {
-  transform: rotate(-45deg);
-}
-
-.header_try .menu-btn:checked ~ .menu-icon .navicon:after {
-  transform: rotate(45deg);
-}
-
-.header_try .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-.header_try .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
-  top: 0;
-}
-
-/* 48em = 768px */
-
-@media (min-width: 48em) {
-  .header_try li {
-    float: left;
-  }
-  .header_try li a {
-    padding: 20px 30px;
-  }
-  .header_try .menu {
-    clear: none;
-    float: right;
-    max-height: none;
-  }
-  .header_try .menu-icon {
-    display: none;
-  }
-}
-
-/* _____ */
-
-.navbar_is {
-  overflow: hidden;
-  background-color: #333;
-}
-
-.navbar_is a {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.dropdown_is {
-  float: left;
-  overflow: hidden;
-}
-
-.dropdown_is .dropbtn_is {
-  font-size: 16px;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-.navbar_is a:hover,
-.dropdown_is:hover .dropbtn_is {
-  background-color: red;
-}
-
-.dropdown-content-is {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.dropdown-content-is a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content-is a:hover {
-  background-color: #ddd;
-}
-
-.dropdown_is:hover .dropdown-content-is {
-  display: block;
-}
+/* ------Dropdown knap til Søborg SLUT------ */
